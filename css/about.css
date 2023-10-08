@@ -1,0 +1,162 @@
+/* navbar starts */
+
+/* #navbar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+} */
+body {
+  background-color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+}
+.nav-item {
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 400; */
+}
+.collapse {
+  margin-right: 30px;
+}
+.btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+}
+.nav-item {
+  margin-right: 28px;
+}
+.navbar-toggler {
+  /* position: fixed;
+    z-index: 1;
+    right: 10px;
+    top: 56px; */
+}
+
+.nav-item img {
+  width: 15.84px;
+  height: 17.1px;
+  margin-left: 5px;
+}
+
+/* navbar ends */
+
+/* about */
+.ab_para {
+  padding: 0 30%;
+}
+@media (max-width: 320px) {
+  .ab_para {
+    padding: 5%;
+  }
+}
+@media (max-width: 786px) {
+  .ab_para {
+    padding: 5%;
+  }
+}
+/* about ends */
+
+/* front immage */
+/* .iamge{
+    position: relative;
+} */
+
+/* front iamge end */
+.image {
+  position: relative;
+  /* top: 114px; */
+}
+.image-1 {
+  margin-top: 20rem;
+}
+.back-2 img {
+  width: 100%;
+  padding: 8px;
+}
+.back {
+  background-color: #1b1c1e;
+  height: 400px;
+  width: 100%;
+  /* position: absolute; */
+  /* bottom: 0; */
+  z-index: -1;
+  margin-top: -118px;
+}
+.back-2 {
+  /* margin-bottom: -40px; */
+}
+.project {
+  height: 200px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.back-3 img {
+  width: 99%;
+}
+.back-3 {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.he img {
+  width: 100%;
+}
+.tex {
+  text-align: justify;
+}
+.re {
+  font-size: medium;
+  padding-top: 31px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+.background {
+  background-color: #1b1c1e;
+  color: white;
+}
+.mission {
+  display: flex;
+}
+.text3 {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 15px;
+  color: #1b1c1e;
+}
+a {
+  text-decoration: none;
+}
+.footimg a {
+  width: 40px;
+  display: flex;
+  gap: 17px;
+}
+/* .footer{
+    font-family: 'Montserrat', sans-serif;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    color: #1B1C1E;
+} */
+.text3 a {
+  color: #1b1c1e;
+}
+.text-4 {
+  display: grid;
+  row-gap: 5px;
+  color: #8f8f8f;
+}
+/* Footer */
+.black {
+  color: #1b1c1e;
+  text-decoration: none;
+  padding: 10px 0;
+  font-weight: 700;
+  margin: auto;
+}
+.footerBase {
+  background: #f1f1f1;
+}

@@ -1,0 +1,254 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 100px 0;
+  background: transparent;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  /* background: linear-gradient(to left, rgba(255, 255, 255, 0), white); */
+}
+
+.logos:after {
+  right: 0;
+  /* background: linear-gradient(to right, rgba(255, 255, 255, 0), white); */
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  white-space: nowrap;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+.testimonials {
+  border: 2px dashed white;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 0 15px -2px #444444;
+  border-radius: 20px;
+  padding-bottom: 5%;
+}
+
+.testimonials p {
+  white-space: wrap;
+}
+
+.testimonials-profile {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-hovers {
+  position: relative;
+}
+
+.testimonials-hovers :hover {
+  border-radius: 20px;
+  padding: 5%;
+  background-color: black;
+  color: white;
+  transform: translateY(-1in);
+  transition-duration: 500ms;
+
+  .testimonials {
+    transform: translateY(0in);
+  }
+  .testimonials i {
+    transform: translateY(0in);
+  }
+  .testimonials p {
+    transform: translateY(0in);
+  }
+  .testimonials-profile {
+    transform: translateY(0in);
+    background-color: transparent;
+    color: black;
+    position: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  .colum4 {
+    display: none;
+  }
+}
+
+.col-4 {
+  padding: 2%;
+  /* display: grid; */
+}
+/* @media(max-width:360px){
+    .col-4{
+    grid-template-columns: 1fr;}
+  }
+  @media(max-width:768px){
+    .col-4{
+    grid-template-columns: 1fr 1fr;}
+  }
+  @media(max-width:1200px){
+    .col-4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;}
+  } */
+
+.madhu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 5%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 2px grey;
+  background-color: white; /* Add a background color */
+  transition: all 0.3s ease;
+}
+.imgPro {
+  position: absolute;
+  top: 90%;
+  border-radius: 50%;
+  /* width:80px;
+    height: 80px; */
+}
+.madhu:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-20%);
+  border: 2px dashed white;
+}
+.text {
+  text-align: center;
+  white-space: wrap;
+}
+.madhu h6 {
+  color: black !important;
+  position: absolute;
+  text-align: center;
+  top: 110%;
+}
+
+.moveContent {
+  display: none;
+}
+
+.moveimageText {
+  position: absolute;
+  bottom: 100px;
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  .moveContent {
+    display: block;
+    height: 60%;
+  }
+  .imgPro {
+    width: 10%;
+  }
+  .madhu h6 {
+    top: 122%;
+  }
+
+  #test-logos {
+    display: none;
+  }
+  .madhu {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgPro {
+    width: 11%;
+  }
+  .madhu h6 {
+    top: 128%;
+  }
+  .madhu:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(0%);
+    border: 2px dashed white;
+  }
+  .madhu {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .imgPro {
+    width: 19%;
+  }
+  .madhu h6 {
+    top: 128%;
+  }
+  .madhu:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(0%);
+    border: 2px dashed white;
+  }
+}
+
+@media (max-width: 500px) {
+  .moveimage {
+    width: 80%;
+    height: 555px;
+  }
+  .moveimageText {
+    bottom: 3 0px;
+    padding: 1%;
+  }
+  .madhu {
+    padding: 2%;
+  }
+}
+.paratext {
+  color: black;
+  padding: 5%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#thavin {
+  overflow: inherit !important;
+}

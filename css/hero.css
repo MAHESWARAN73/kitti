@@ -1,0 +1,186 @@
+#madhu {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: #1b1c1e;
+}
+@media (max-width: 400px) {
+  #madhu {
+    font-size: 22px;
+  }
+}
+.card {
+  border: none !important;
+  background-color: transparent !important;
+}
+.card-body {
+  padding: 7px !important;
+}
+.tet {
+  position: absolute;
+  top: 50%;
+  font-size: large;
+  font-weight: 500;
+  padding: 0 20%;
+  color: white;
+}
+.tets {
+  position: absolute;
+  top: 50%;
+  font-size: large;
+  font-weight: 500;
+  padding: 0 15%;
+  color: white;
+}
+.hero-card {
+  padding: 20px;
+}
+
+/* #myCarousel {
+        margin-top: 50px;
+    } */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+/* .carousel-control-prev,.carousel-control-next{
+        margin-top: 25%;
+        background-color: none;
+        position: relative; !important
+    } */
+.leftButton,
+.rightButton {
+  border: none;
+}
+.leftRightButtons {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1400px) {
+  #Hero_inner.carousel-inner #Hero_item.carousel-item > div {
+    display: block;
+  }
+
+  #Hero_inner.carousel-inner #Hero_item.carousel-item > div:first-child {
+    display: block;
+    border: 2px dashed black;
+    border-radius: 200px;
+  }
+}
+@media (max-width: 1200px) {
+  #Hero_inner.carousel-inner #Hero_item.carousel-item > div {
+    display: block;
+  }
+
+  #Hero_inner.carousel-inner #Hero_item.carousel-item > div:first-child {
+    display: block;
+    border: 2px dashed black;
+    border-radius: 200px;
+  }
+}
+@media (max-width: 768px) {
+  #Hero_inner.carousel-inner #Hero_item.carousel-item > div {
+    display: block;
+  }
+
+  #Hero_inner.carousel-inner #Hero_item.carousel-item > div:first-child {
+    display: block;
+    border: 2px dashed black;
+    border-radius: 200px;
+  }
+}
+@media (max-width: 576px) {
+  #Hero_inner.carousel-inner #Hero_item.carousel-item > div {
+    display: none;
+  }
+
+  #Hero_inner.carousel-inner #Hero_item.carousel-item > div:first-child {
+    display: block;
+    border: 2px dashed black;
+    border-radius: 200px;
+  }
+}
+
+#Hero_inner.carousel-inner #Hero_item.carousel-item.active,
+#Hero_inner.carousel-inner #Hero_item.carousel-item-start,
+#Hero_inner.carousel-inner #Hero_item.carousel-item-next,
+#Hero_inner.carousel-inner #Hero_item.carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  #Hero_inner.carousel-inner #Hero_item.carousel-item-right.active,
+  #Hero_inner.carousel-inner #Hero_item.carousel-item-next,
+  #Hero_item.carousel-item-next:not(#Hero_item.carousel-item-start) {
+    transform: translateX(25%) !important;
+  }
+
+  #Hero_inner.carousel-inner #Hero_item.carousel-item-left.active,
+  #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end),
+  .active#Hero_item.carousel-item-start,
+  #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+
+  #Hero_item.carousel-item-next#Hero_item.carousel-item-start,
+  .active#Hero_item.carousel-item-end {
+    transform: translateX(0) !important;
+  }
+
+  #Hero_inner.carousel-inner #Hero_item.carousel-item-prev,
+  #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+}
+.bo {
+  position: absolute;
+  left: 42px;
+  top: 6px;
+  width: 222px;
+}
+@media (max-width: 400px) {
+  .bo {
+    width: 161px;
+    left: 44.5px;
+    top: 8px;
+  }
+}
+.e1 {
+  position: absolute;
+  bottom: -16%;
+  left: -3%;
+  width: 20%;
+}
+.e2 {
+  position: absolute;
+  top: -12%;
+  right: 66%;
+  width: 20%;
+}
+@media (max-width: 400px) {
+  .e1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+  }
+  .e2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+  }
+}
+.buttonsImage {
+  width: 50px;
+}
+.active-carousel-item {
+  border: 2px dashed black;
+}
+#Hero_inner.carousel-inner #Hero_item.carousel-item > div:first-child p {
+  display: none;
+}

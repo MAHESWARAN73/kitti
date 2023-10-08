@@ -1,0 +1,42 @@
+.back {
+  font-family: "Montserrat", sans-serif;
+}
+.coreHead {
+  position: relative;
+  z-index: 2;
+}
+.headCore {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  text-align: center;
+  
+}
+.contentPara {
+  background-color: #1b1c1e;
+  color: #ffffff;
+  height: 100%;
+  padding: 9% 7% 6% 6%;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.headParaCore{
+  font-size: 25px; 
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.corePara{
+  font-size: 18px;
+}
+.buttonSty{
+  background-color: #ffffff;
+  color: #1b1c1e;
+  border-radius: 0px;
+  width: 110px;
+  font-weight: 600;
+}
+.ImgBG img {
+  width: 100%;
+  height: 318px;
+}

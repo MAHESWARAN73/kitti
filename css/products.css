@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
+/* navbar starts here */
+.head {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #f1f1f1;
+}
+
+/* Navbar */
+.nav-item {
+  font-family: "Montserrat", sans-serif;
+}
+.collapse {
+  margin-right: 30px;
+}
+.btn {
+  width: 130px;
+  height: 40px;
+  /* border-radius: 20px; */
+  padding: 2px;
+}
+.nav-item {
+  margin-right: 28px;
+}
+.navbar-toggler {
+  /* position: fixed;
+    z-index: 1;
+    right: 10px;
+    top: 56px; */
+}
+.nav-item img {
+  width: 15.84px;
+  height: 17.1px;
+  margin-left: 5px;
+}
+
+/* navbar ends here */
+
+/* products */
+.Products {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+/* products ends here */
+
+/* rows starts here */
+/* styling of images */
+.left_1 {
+  width: 60%;
+  margin: 50px auto;
+  border: 3px white dashed;
+  border-radius: 25px;
+}
+.l_img {
+  background-color: #1b1c1e;
+  padding: 0;
+  position: relative;
+}
+.l_in {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+/* styling of images ends */
+
+/* styling of contents in columns */
+.chimpik {
+  margin: 0 auto;
+  display: flex;
+  padding: 20px 0;
+}
+
+.ChimpikRow {
+  display: flex;
+}
+
+@media (max-width: 400px) {
+  .chimpik {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .ChimpikRow {
+    flex-direction: column-reverse;
+  }
+}
+.chimpik_color {
+  background-color: #e6e6e6;
+  font-family: "Adamina", serif;
+  font-weight: 400;
+}
+
+.lorem {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: black;
+  line-height: 35px;
+}
+.product-page {
+  background-color: #ffffff;
+}
+
+/* Footer */
+.black {
+  color: #1b1c1e;
+  text-decoration: none;
+  padding: 10px 0;
+  font-weight: 700;
+  margin: auto;
+}
+.footerBase {
+  background-color: #f1f1f1;
+}
+
+/* ============ footer start =============== */
+.footer-img img {
+  width: 200px;
+}
+.footer-h1 {
+  color: #8f8f8f;
+}
+.footer-h6 a {
+  text-decoration: none;
+  color: #1b1c1e;
+  line-height: 24.38px;
+}
+.footer-h7 {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+.footer-h6 {
+  text-align: left;
+  /* text-align: center; */
+}
+.footer-subcribe {
+  border: 1px solid gray;
+  margin: 0;
+  border-radius: 25px;
+  display: flex;
+  position: relative;
+}
+.footer-subcribe input,
+button {
+  height: 39px;
+  border: none;
+  border-radius: 25px;
+}
+.footer-subcribe input {
+  width: 285 px;
+  padding: 12px;
+}
+.footer-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.footer-subcribe button {
+  width: 127px;
+  background-color: #1b1c1e;
+  color: #ffffff;
+}
+.footer-icon {
+  display: flex;
+
+  /* justify-content: space-evenly; */
+}
+.icons {
+  background: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  margin-right: 12px;
+}
+.icons a {
+  text-decoration: none;
+}
+.icons i {
+  width: 41px;
+  height: 41px;
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+.footer-sec {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f1f1;
+}
+.footer-up {
+  position: absolute;
+  right: 30px;
+}
+.footer-up a {
+  text-decoration: none;
+}
+.footer-up i {
+  background-color: #20c997;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #ffffff;
+}
+@media (min-width: 320px) {
+  .footer-up i {
+    position: fixed;
+    z-index: 2;
+    bottom: 8px;
+    right: 28px;
+  }
+}

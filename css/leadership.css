@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Adamina&family:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Footer */
+.black {
+  color: #1b1c1e;
+  text-decoration: none;
+  padding: 10px 0;
+  font-weight: 700;
+  margin: auto;
+}
+.footerBase {
+  background-color: #f1f1f1;
+}
+.nameB{
+  font-weight: 600;
+}
+/* about */
+
+/* @media (max-width:320px){
+    .ab_para{
+        padding: 5%;
+    }
+}
+@media (max-width:786px){
+    .ab_para{
+        padding: 5%;
+    }
+} */
+/* about ends */
+.ceo p {
+  /* height: 100%; */
+  font-weight: 400;
+  font-family: "Adamina", serif;
+  font-size: 28px;
+}
+
+/* footer */
+/* .text3{
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 15px;
+    color: #1B1C1E;
+}
+a{
+    text-decoration: none;
+}
+.footimg a{
+    width: 40px;
+    display: flex;
+    gap: 17px;
+} */
+/* .footer{
+    font-family: 'Montserrat', sans-serif;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    color: #1B1C1E;
+} */
+/* .text3 a{
+    color: #1B1C1E;
+}
+.text-4{
+    display: grid;
+    row-gap: 5px;
+    color: #8F8F8F
+} */
+.Elite {
+  margin-top: -28px;
+}
+.cons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ceoin {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+}
+.header {
+  font-family: "Montserrat", sans-serif;
+}
+.about {
+  font-family: "Montserrat", sans-serif;
+}
+.Elite {
+  font-family: "Montserrat", sans-serif;
+}
+.down {
+}
+/* #navbar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+} */
+.nav-item {
+  font-family: "Montserrat", sans-serif;
+}
+.collapse {
+  margin-right: 30px;
+}
+.btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+}
+.nav-item {
+  margin-right: 28px;
+}
+.navbar-toggler {
+  /* position: fixed;
+    z-index: 1;
+    right: 10px;
+    top: 56px; */
+}
+
+.nav-item img {
+  width: 15.84px;
+  height: 17.1px;
+  margin-left: 5px;
+}

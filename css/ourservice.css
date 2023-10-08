@@ -1,0 +1,45 @@
+.sec-service{
+  background-color: #FFFFFF;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.serviceHead{
+  font-weight: 400;
+  padding-bottom: 3%;
+}
+.serPara{
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.servicecolumn {
+  background-color: #1b1c1e;
+  color: white;
+  border: 1px solid white;
+  padding: 5%;
+}
+
+.servicecolumn:hover {
+  background-color: white;
+  color: black;
+  border: 2px dashed green;
+}
+.vectorImagediv {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.vectorImage {
+  width: 50px;
+}
+.vectorText {
+  font-size: 15px;
+}
+.bluegradient {
+  position: absolute;
+  width: 210px;
+  top: -31%;
+  left: 0px;
+}

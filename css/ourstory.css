@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
+
+#carouselExampleVertical .carousel-item-next:not(.carousel-item-start),
+#carouselExampleVertical .active.carousel-item-end {
+  transform: translateY(100%);
+}
+
+#carouselExampleVertical .carousel-item-prev:not(.carousel-item-end),
+#carouselExampleVertical .active.carousel-item-start {
+  transform: translatey(-100%);
+}
+/* #carouselExampleVertical .carousel-item-end,
+#carouselExampleVertical .carousel-item-next:not(.carousel-item-start) {
+  transform: translateY(100%);
+}
+
+#carouselExampleVertical .carousel-item-start,
+#carouselExampleVertical .carousel-item-prev:not(.carousel-item-end) {
+  transform: translateY(-100%);
+} */
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  justify-content: end;
+  padding: 0;
+  margin: 0 4%;
+}
+.our-button {
+  width: 5px !important;
+  height: 45px !important;
+}
+.ours .carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 3px;
+  height: 45px;
+  padding: 0;
+  text-indent: -999px;
+  background-clip: padding-box;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.twenty {
+  color: #ff7715;
+  font-family: Adamina;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 12.1px;
+  margin: 0;
+  margin-bottom: 13%;
+}
+
+.twenty_one {
+  color: #c1c1c1;
+  font-family: Adamina;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 12.1px;
+  margin: 0;
+  margin-top: 13%;
+}
+
+.twenty_tex1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+}
+
+.twenty_tex2 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.04px;
+}
+
+.our_story {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  margin-bottom: 5%;
+}
+
+.pink_ecllipse {
+  position: absolute;
+  width: 400px;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 400px) {
+  .pink_ecllipse {
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 10%;
+  }
+}
+
+@media (max-width: 400px) {
+  .twenty {
+    color: #ff7715;
+    font-family: Adamina;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 12.1px;
+    margin: 0;
+    margin-bottom: 13%;
+  }
+
+  .twenty_one {
+    color: #c1c1c1;
+    font-family: Adamina;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 12.1px;
+    margin: 0;
+    margin-top: 13%;
+  }
+
+  .twenty_tex1 {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+  }
+
+  .twenty_tex2 {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
