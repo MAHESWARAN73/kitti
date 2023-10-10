@@ -9,7 +9,7 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link
+    <!-- <link
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
@@ -32,22 +32,18 @@
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    /> -->
     <link rel="stylesheet" href="css/about.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css"
-    />
-    <link
+
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Poppins&display=swap"
       rel="stylesheet"
-    />
-    <link
+    /> -->
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -60,7 +56,7 @@
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -68,7 +64,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!--Font family-->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Josefin+Sans:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,400&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet"> -->
     <title>About</title>
   </head>
   <body>
@@ -121,7 +118,7 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#"
+                      <a class="dropdown-item" href="social.html"
                         >Environmental social governance</a
                       >
                     </li>
@@ -141,38 +138,34 @@
                   </a>
 
                   <ul class="dropdown-menu p-0">
-                    <li><a class="dropdown-item" href="#">Industries</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Services</a>
+                      <a class="dropdown-item" href="industrises.html"
+                        >Industries</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Products</a>
+                      <a class="dropdown-item" href="service.html">Services</a>
                     </li>
                     <li>
+                      <a class="dropdown-item" href="products.html">Products</a>
+                    </li>
+                    <!-- <li>
                       <a class="dropdown-item" href="#"
                         >Research & Invovation</a
                       >
-                    </li>
+                    </li> -->
                   </ul>
                 </li>
 
-                <li class="nav-item dropdown">
+                <li class="nav-item">
                   <a
-                    class="nav-link"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Careers
+                    class="nav-link active"
+                    aria-current="page"
+                    href="career.html"
+                    style="color: #000000a6"
+                    >Careers
                     <img src="images/arrow.png" alt="" />
                   </a>
-
-                  <ul class="dropdown-menu p-0">
-                    <li>
-                      <a class="dropdown-item" href="career.html">Careers</a>
-                    </li>
-                  </ul>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -192,14 +185,18 @@
                       <a class="dropdown-item" href="#">Life at kittivaasal</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Blogs</a>
+                      <a class="dropdown-item" href="blogs.html">Blogs</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Case study</a>
+                      <a class="dropdown-item" href="casestudy.html"
+                        >Case study</a
+                      >
                     </li>
                   </ul>
                 </li>
-                <button type="button" class="btn btn-dark">Contact us</button>
+                <a href="">
+                  <button type="button" class="btn btn-dark">Contact us</button>
+                </a>
               </ul>
             </div>
           </div>
@@ -212,15 +209,20 @@
 
     <!-- About us -->
     <section class="about">
-      <div class="container text-center">
-        <div class="row">
-          <h1 style="padding-bottom: 10px;">ABOUT US</h1>
-          <div class="ab_para text-justify">
-            <p style="line-height: 28px;">
-              Lorem ipsum dolor sit amet consectetur. Integer gravida amet nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc duis libero morbi id.
-            </p>
+      <div class="elliImggCont">
+        <div class="container text-center">
+          <div class="row">
+            <h1 class="abtHead">ABOUT US</h1>
+            <div class="ab_para text-justify">
+              <p style="line-height: 28px">
+                Lorem ipsum dolor sit amet consectetur. Integer gravida amet
+                nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc duis
+                libero morbi id.
+              </p>
+            </div>
           </div>
         </div>
+        <img class="elliImgg" src="images/Ellipse 13 (2).png" alt="" />
       </div>
     </section>
 
@@ -259,15 +261,15 @@
                       animation-name: fadeInUp;
                     "
                   >
-                    <i class="fa fa-beer medium-icon"></i>
+                    <!-- <i class="fa fa-beer medium-icon"></i> -->
                     <span id="anim-number-pizza" class="counter-number"></span>
                     <span
-                      class="timer counter alt-font appear"
+                      class="fontsiz timer counter alt-font appear"
                       data-to="980"
                       data-speed="7000"
                       >15</span
                     >
-                    <p class="counter-title">Projects</p>
+                    <p class="titleT counter-title">Clients</p>
                   </div>
                   <!-- end counter -->
                   <!-- counter -->
@@ -280,16 +282,16 @@
                       animation-name: fadeInUp;
                     "
                   >
-                    <i class="fa fa-heart medium-icon"></i>
+                    <!-- <i class="fa fa-heart medium-icon"></i> -->
                     <span
-                      class="timer counter alt-font appear"
+                      class="fontsiz timer counter alt-font appear"
                       data-to="980"
                       data-speed="7000"
-                      >29</span
+                      >21</span
                     >
                     <span class="counter-title"></span>
 
-                    <p class="counter-title">Projects_Ongoing</p>
+                    <p class="titleT counter-title">Projects Ongoing</p>
                   </div>
                   <!-- end counter -->
                   <!-- counter -->
@@ -302,15 +304,15 @@
                       animation-name: fadeInUp;
                     "
                   >
-                    <i class="fa fa-anchor medium-icon"></i>
+                    <!-- <i class="fa fa-anchor medium-icon"></i> -->
                     <span
-                      class="timer counter alt-font appear"
+                      class="fontsiz timer counter alt-font appear"
                       data-to="810"
                       data-speed="7000"
-                      >25</span
+                      >27</span
                     >
 
-                    <p class="counter-title">Projects Completed</p>
+                    <p class="titleT counter-title">Projects Completed</p>
                   </div>
                   <!-- end counter -->
                 </div>
@@ -322,267 +324,155 @@
     </section>
 
     <section>
-      <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="col-md-6 col-sm-12">
-            <div class="he">
-              <img src="images/Rectangle 67.png" alt="" />
+      <div class="backpadd">
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col-md-6 col-sm-12">
+              <div class="he">
+                <img class="imgback" src="images/Rectangle 64.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="re">
-              <h2 class="mission">OUR VISION</h2>
-              <p class="tex">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-                in facere nihil eaque dolore laudantium iure iusto, commodi
-                ipsam asperiores, mollitia voluptas dignissimos autem voluptates
-                harum impedit incidunt, odit at? <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                laborum similique suscipit pariatur veniam. Magni, sint possimus
-                sequi fuga similique rem? Nobis iste quae corrupti fuga nostrum?
-                Iste, amet aut.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo
-                provident modi quasi similique esse, nobis debitis dolore cum
-                nesciunt aut exercitationem totam dolorem iure consequuntur
-                praesentium. Neque, est rerum.
-              </p>
+            <div class="col-md-6 col-sm-12">
+              <div class="re">
+                <h1 class="mission">OUR VISION</h1>
+                <p class="tex">
+                  Lorem ipsum dolor sit amet consectetur. Scelerisque tempor
+                  tempor velit aenean luctus sed viverra ac. Rhoncus fringilla
+                  mi diam enim cursus risus. Vulputate odio at libero tellus
+                  mauris tempus. In laoreet in metus scelerisque bibendum. At
+                  dui commodo diam enim eleifend id. Metus amet sed mattis
+                  viverra sed lacus. Proin egestas id risus imperdiet in nec.
+                  Felis risus condimentum ornare massa ut. Ipsum nulla urna
+                  pellentesque quisque mi auctor viverra.
+                </p>
 
-              <p class="tex">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-                in facere nihil eaque dolore laudantium iure iusto, commodi
-                ipsam asperiores, mollitia voluptas dignissimos autem voluptates
-                harum impedit incidunt, odit at? <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                laborum similique suscipit pariatur veniam. Magni, sint possimus
-                sequi fuga similique rem? Nobis iste quae corrupti fuga nostrum?
-                Iste, amet aut.<br />
-                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Et quo provident modi quasi similique esse, nobis debitis dolore cum nesciunt
-                        aut exercitationem totam dolorem iure consequuntur praesentium. Neque, est rerum. -->
-              </p>
+                <p class="tex">
+                  Lorem ipsum dolor sit amet consectetur. Scelerisque tempor
+                  tempor velit aenean luctus sed viverra ac. Rhoncus fringilla
+                  mi diam enim cursus risus. Vulputate odio at libero tellus
+                  mauris tempus. In laoreet in metus scelerisque bibendum. At
+                  dui commodo diam enim eleifend id. Metus amet sed mattis
+                  viverra sed lacus. Proin egestas id risus imperdiet in nec.
+                  Felis risus condimentum ornare massa ut. Ipsum nulla urna
+                  pellentesque quisque mi auctor viverra.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+        <img class="ellip1" src="images/Ellipse 14 (2).png" alt="" />
+        <img class="ellip2" src="images/Ellipse 16 (2).png" alt="" />
       </div>
     </section>
 
     <section class="background">
-      <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="col-md-6 col-sm-12">
-            <div class="re">
-              <h2 class="mission">OUR MISSION</h2>
-              <p class="tex">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-                in facere nihil eaque dolore laudantium iure iusto, commodi
-                ipsam asperiores, mollitia voluptas dignissimos autem voluptates
-                harum impedit incidunt, odit at? <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                laborum similique suscipit pariatur veniam. Magni, sint possimus
-                sequi fuga similique rem? Nobis iste quae corrupti fuga nostrum?
-                Iste, amet aut.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo
-                provident modi quasi similique esse, nobis debitis dolore cum
-                nesciunt aut exercitationem totam dolorem iure consequuntur
-                praesentium. Neque, est rerum.
-              </p>
+      <div class="backpad">
+        <div class="container text-center">
+          <div class="revRow row align-items-start">
+            <div class="col-md-6 col-sm-12">
+              <div class="re">
+                <h1 class="mission1">OUR MISSION</h1>
+                <p class="tex1">
+                  Lorem ipsum dolor sit amet consectetur. Scelerisque tempor
+                  tempor velit aenean luctus sed viverra ac. Rhoncus fringilla
+                  mi diam enim cursus risus. Vulputate odio at libero tellus
+                  mauris tempus. In laoreet in metus scelerisque bibendum. At
+                  dui commodo diam enim eleifend id. Metus amet sed mattis
+                  viverra sed lacus. Proin egestas id risus imperdiet in nec.
+                  Felis risus condimentum ornare massa ut. Ipsum nulla urna
+                  pellentesque quisque mi auctor viverra.
+                </p>
 
-              <p class="tex">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-                in facere nihil eaque dolore laudantium iure iusto, commodi
-                ipsam asperiores, mollitia voluptas dignissimos autem voluptates
-                harum impedit incidunt, odit at? <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                laborum similique suscipit pariatur veniam. Magni, sint possimus
-                sequi fuga similique rem? Nobis iste quae corrupti fuga nostrum?
-                Iste, amet aut.<br />
-                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Et quo provident modi quasi similique esse, nobis debitis dolore cum nesciunt
-                        aut exercitationem totam dolorem iure consequuntur praesentium. Neque, est rerum. -->
-              </p>
+                <p class="tex1">
+                  Lorem ipsum dolor sit amet consectetur. Scelerisque tempor
+                  tempor velit aenean luctus sed viverra ac. Rhoncus fringilla
+                  mi diam enim cursus risus. Vulputate odio at libero tellus
+                  mauris tempus. In laoreet in metus scelerisque bibendum. At
+                  dui commodo diam enim eleifend id. Metus amet sed mattis
+                  viverra sed lacus. Proin egestas id risus imperdiet in nec.
+                  Felis risus condimentum ornare massa ut. Ipsum nulla urna
+                  pellentesque quisque mi auctor viverra.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="he">
-              <img src="images/Rectangle 67.png" alt="" />
+            <div class="hes col-md-6 col-sm-12">
+              <div class="he">
+                <img src="images/Rectangle 67.png" alt="" />
+              </div>
+              <img class="abs" src="images/Rectangle 70 (1).png" alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- <section class="">
-      <div class="container">
-        <div class="footer mb-4 mt-4">
-          <div class="row p-2">
-            <div class="col-md-3 col-sm-12">
-              <div class="text mt-3">
-                <a href="#">
-                  <img
-                    src="images/Kitti---2_send-transformed 1.png"
-                    alt="Logo"
-                    style="width: 200px"
-                  />
-                </a>
-              </div>
+    <!--Footer start-->
+    <div class="container-fluid footer-sec">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-img">
+              <a href=""><img src="images/Kitti-logo.png" alt="" /></a>
             </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="text mt-3">
-                <h3 class="mt-3">Contact us</h3>
+          </div>
+          <div class="col-md-3">
+            <div class="">
+              <h4 class="footer-h1">Contact Us</h4>
+              <div class="">
                 Block Q, No: 24/20, 1’st Floor, Thirumangalam Rd, Block Q,
                 Agathiyar Nagar, Anna Nagar, Chennai, Tamil Nadu 600049
               </div>
             </div>
-            <div class="col-md-3 col-sm-12 mt-3">
-              <div class="text3">
-                <a href="#">WHAT WE DO</a>
-                <a href="#">WHAT WE ARE</a>
-                <a href="#">CARRERS</a>
-                <a href="#">INSIGHTS</a>
-              </div>
+          </div>
+          <div class="col-md-3 footer-last">
+            <div class="footer-h6">
+              <h6 class="footer-h7"><a href="#who">WHO WE ARE</a></h6>
+              <h6 class="footer-h7"><a href="#who">WHAT WE DO</a></h6>
+              <h6 class="footer-h7 me-4"><a href="#who">CARRERS</a></h6>
+              <h6 class="footer-h7 me-4"><a href="#who">INSIGHTS</a></h6>
             </div>
-            <div class="col-md-3 col-sm-12 mt-3">
-              <div class="text-4">
-                <div class="">
-                  <p>Subscribe</p>
+          </div>
+          <div class="col-md-3">
+            <div class="">
+              <h5 class="footer-h1">Subscribe</h5>
+              <div class="footer-subcribe mb-3">
+                <div class="p-0">
+                  <input type="email" placeholder="Email" />
                 </div>
-                <div class="">
-                  <div
-                    class="input-group mb-2"
-                    style="border: 1px solid black; border-radius: 30px"
-                  >
-                    <input
-                      type="text "
-                      style=""
-                      class="form-control rounded-5"
-                      placeholder="Email"
-                      aria-label="Recipient's username"
-                      aria-describedby="button-addon2"
-                    />
-                    <button
-                      class="btn btn-outline-secondary"
-                      type="button"
-                      id="button-addon2"
-                      style="
-                        background-color: black;
-                        color: white;
-                        border-radius: 30px;
-                      "
-                    >
-                      Subscribe
-                    </button>
-                  </div>
+                <div class="footer-btn p-0">
+                  <button type="submit">Subscribe</button>
                 </div>
-                <div class="">
-                  <p>Follow us</p>
-                  <div class="footimg" style="display: flex; gap: 12px">
-                    <a href=""><img src="images/facebook.png" alt="" /></a>
-                    <a href=""><img src="images/linkedin.png" alt="" /></a>
-                    <a href=""><img src="images/instagram.png" alt="" /></a>
-                  </div>
+              </div>
+              <h6 class="footer-h1">Follow Us</h6>
+              <div class="footer-icon">
+                <div class="icons">
+                  <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </div>
+                <div class="icons">
+                  <a href="">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+                <div class="icons">
+                  <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="footer-up">
+          <!-- <i class="fa-duotone fa-message-arrow-up"></i> -->
+          <a href="#navbar"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
       </div>
-    </section> -->
+    </div>
+    <!--Footer end-->
 
-    <!--Footer-->
-    <section class="">
-      <div class="footerBase py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-sm-12 p-0">
-              <img
-                src="images/Kitti.png"
-                alt=""
-                style="
-                  display: flex;
-                  margin: auto auto;
-                  width: 200px;
-                  padding: 30px 0;
-                "
-              />
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="Address" style="width: 210px; margin: auto">
-                <p style="color: #8f8f8f; font-size: 20px; font-weight: 500">
-                  Contact Us
-                </p>
-                <p>
-                  Block Q, No: 24/20, 1’st Floor, Thirumangalam Rd, Block Q,
-                  Agathiyar Nagar, Anna Nagar, Chennai, Tamil Nadu 600049
-                </p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <div
-                class="siteInfo"
-                style="
-                  display: grid;
-                  align-items: center;
-                  justify-content: center;
-                  padding: 20px 0;
-                "
-              >
-                <a class="black" href="#">WHO WE ARE</a>
-                <a class="black" href="#">WHAT WE DO</a>
-                <a class="black" href="#">CAREERS</a>
-                <a class="black" href="#">INSIGHTS</a>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <p style="color: #8f8f8f; font-size: 20px; font-weight: 500">
-                Subscribe
-              </p>
-              <div
-                class="input-group mb-2"
-                style="border: 1px solid black; border-radius: 30px"
-              >
-                <input
-                  type="email"
-                  class="form-control rounded-5"
-                  placeholder="Email"
-                  aria-label="Recipient's username"
-                  aria-describedby="button-addon2"
-                />
-                <button
-                  class="btn btn-outline-secondary"
-                  type="button"
-                  id="button-addon2"
-                  style="
-                    background-color: black;
-                    color: white;
-                    border-radius: 30px;
-                  "
-                >
-                  Subscribe
-                </button>
-              </div>
-              <p
-                style="
-                  color: #8f8f8f;
-                  font-size: 20px;
-                  font-weight: 500;
-                  padding-top: 20px;
-                "
-              >
-                Follow Us
-              </p>
-              <div class="follow-us">
-                <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
-                <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
-                <a href="#"
-                  ><img src="images/instagram.png" alt="Instagram"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-           
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -605,5 +495,6 @@
         });
       });
     </script>
+     
   </body>
 </html>
