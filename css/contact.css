@@ -26,14 +26,14 @@
 
 /* left */
 .left {
-  background-image: url(Rectangle\ 6.png);
+  background-image: url(../images/Rectangle\ 6.png);
   background-size: cover;
   background-position: center;
   height: 600px;
   font-family: "Montserrat", sans-serif;
 }
 .right {
-  background-image: url(Rectangle\ 91.png);
+  background-image: url(../images/Rectangle\ 91.png);
   background-size: cover;
   background-position: center;
   height: 600px;
