@@ -27,19 +27,19 @@
   letter-spacing: 1.5px;
   margin-bottom: 13%;
 }
-.img_black {
+/* .img_black {
   position: absolute;
   top: 24%;
   z-index: -1;
   width: 100%;
-}
-.img_dotted {
+} */
+/* .img_dotted {
   position: absolute;
   top: 23%;
   z-index: -1;
   margin: 1% 10px;
   width: 85%;
-}
+} */
 .ellipseL {
   position: absolute;
   height: 350px;
@@ -146,7 +146,7 @@
   letter-spacing: 1.5px;
   margin-bottom: 14%;
 }
-.img_blackk {
+/* .img_blackk {
   position: absolute;
   top: 24%;
   z-index: -1;
@@ -158,7 +158,7 @@
   z-index: -1;
   margin: 1% 10px;
   width: 85%;
-}
+} */
 .ellipseLL {
   position: absolute;
   height: 350px;
@@ -230,4 +230,94 @@
         position: relative;
         z-index: 1;
     } */
+}
+@media (min-width: 320px) {
+  .img_black {
+    height: 0;
+  }
+  .img_blackk {
+    height: 0;
+  }
+}
+@media (min-width: 600px) {
+  .imauniq-1 {
+    position: absolute;
+    top: 28%;
+  }
+  .imguniqq-1 {
+    position: absolute;
+    top: 28%;
+  }
+  .img_black {
+    position: absolute;
+    top: 24%;
+    z-index: -1;
+    width: 100%;
+    height: 35vh;
+  }
+  .img_dotted {
+    position: absolute;
+    top: 23%;
+    z-index: -1;
+    margin: 1% 10px;
+    /* width: 85%; */
+  }
+  .in_b_para2 {
+    line-height: 25px;
+  }
+  .img_blackk {
+    position: absolute;
+    top: 24%;
+    z-index: -1;
+    width: 100%;
+    height: 35vh;
+  }
+  .img_dottedd {
+    position: absolute;
+    top: 23%;
+    z-index: -1;
+    margin: 1% 10px;
+    /* width: 85%; */
+  }
+}
+@media (min-width: 1024px) {
+  .imauniq-1 {
+    position: absolute;
+    top: -40px;
+  }
+  .imguniqq-1 {
+    position: absolute;
+    top: -40px;
+  }
+  .img_black {
+    position: absolute;
+    top: 27%;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+  }
+  .img_dotted {
+    position: absolute;
+    top: 26%;
+    z-index: -1;
+    margin: 1% 10px;
+    width: 85%;
+  }
+  .in_b_para2 {
+    line-height: 30px;
+  }
+  .img_blackk {
+    position: absolute;
+    top: 27%;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+  }
+  .img_dottedd {
+    position: absolute;
+    top: 26%;
+    z-index: -1;
+    margin: 1% 10px;
+    width: 85%;
+  }
 }

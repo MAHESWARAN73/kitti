@@ -83,7 +83,7 @@
   }
   #ecllipse1 {
     top: 60%;
-    /* right: -9%; */
+    right: -9%;
     width: 107px;
     height: 150px;
   }
@@ -169,12 +169,22 @@
   /* left: -6%; */
   position: absolute;
 }
+.leftBtnL:hover {
+  background-color: #007aff;
+  color: #fff;
+  transition: all ease-in 0.2s;
+}
 .rightBtnL {
   width: 25px;
   background-color: black;
   top: 45%;
   /* right: -6%; */
   position: absolute;
+}
+.rightBtnL:hover {
+  background-color: #007aff;
+  color: #fff;
+  transition: all ease-in 0.2s;
 }
 
 .moveimageText {
@@ -184,7 +194,7 @@
 }
 
 /* ==== Animation start===== */
-/* .reveal {
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
@@ -194,7 +204,7 @@
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
-} */
+}
 /* ==== Animation End===== */
 
 @media (max-width: 992px) {
