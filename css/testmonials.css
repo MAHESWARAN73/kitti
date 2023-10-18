@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -162,7 +169,7 @@
   color: black !important;
   position: absolute;
   text-align: center;
-  top: 110%;
+  top: 116%;
 }
 
 .moveContent {
@@ -178,7 +185,7 @@
 @media (max-width: 992px) {
   .moveContent {
     display: block;
-    /* height: 60%; */
+    height: 25%;
   }
   .imgPro {
     width: 10%;
@@ -249,6 +256,6 @@
   top: 0px;
 }
 
-#thavin {
+/* #thavin {
   overflow: inherit !important;
-}
+} */

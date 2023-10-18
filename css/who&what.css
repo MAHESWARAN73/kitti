@@ -132,9 +132,9 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 180% */
+  line-height: 27px; /* 180% */
   letter-spacing: 0.8px;
-  margin-bottom: 8%;
+  /* margin-bottom: 8%; */
 }
 .uniqq {
   color: #8f8f8f;
@@ -144,7 +144,7 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.5px;
-  margin-bottom: 14%;
+  margin-bottom: 5%;
 }
 /* .img_blackk {
   position: absolute;

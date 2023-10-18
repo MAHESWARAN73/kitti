@@ -1,14 +1,14 @@
-.sec-service{
-  background-color: #FFFFFF;
+.sec-service {
+  background-color: #ffffff;
   position: relative;
   font-family: "Montserrat", sans-serif;
 }
 
-.serviceHead{
+.serviceHead {
   font-weight: 400;
   padding-bottom: 3%;
 }
-.serPara{
+.serPara {
   font-weight: 500;
   line-height: 23px;
 }
@@ -25,12 +25,23 @@
   color: black;
   border: 2px dashed green;
 }
+.servicecolumn:hover .vectorText {
+  color: black;
+}
+
 .vectorImagediv {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+.vectorImagediv a {
+  text-decoration: none;
+  color: white;
+}
+/* .vectorImagediv a:hover {
+  color: #1b1c1e;
+} */
 .vectorImage {
   width: 50px;
 }

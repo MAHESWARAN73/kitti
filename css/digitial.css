@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
 
 /* Navbar starts */
 .nav-item {
@@ -660,6 +660,7 @@
 .footer-h7 {
   display: flex;
   justify-content: center;
+  font-weight: 600;
 }
 .footer-h6 {
   text-align: left;
@@ -679,7 +680,7 @@ button {
   border-radius: 25px;
 }
 .footer-subcribe input {
-  /* width: 303px; */
+  /* width: 285px; */
   padding: 12px;
 }
 .footer-btn {
@@ -718,6 +719,7 @@ button {
 }
 .footer-sec {
   position: relative;
+  font-family: "Montserrat", sans-serif;
 }
 .footer-up {
   position: absolute;
@@ -728,8 +730,8 @@ button {
 }
 .footer-up i {
   background-color: #20c997;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -737,4 +739,198 @@ button {
   font-weight: 600;
   color: #ffffff;
 }
+/* ==== Animation start===== */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* ==== Animation End===== */
+
+/* ======== Footer next start========== */
+.footer-next-1 {
+  background-color: #f1f1f1;
+  height: 8vh;
+  display: none;
+}
+/* ======== Footer next end========== */
+
+@media (min-width: 320px) {
+  .footer-up i {
+    /* position: fixed;
+    z-index: 2;
+    bottom: 68px;
+    right: 28px; */
+    visibility: hidden;
+  }
+  .footer-last {
+    margin-top: 20px;
+  }
+  .footer-h6 {
+    float: left;
+  }
+  .footer-next-1 {
+    display: block;
+  }
+}
+@media (min-width: 600px) {
+  .footer-h6 {
+    float: none;
+  }
+  .footer-last {
+    margin-top: 0;
+  }
+  .footer-sec {
+    height: auto;
+  }
+  .footer-next-1 {
+    display: none;
+  }
+  .footer-up i {
+    position: fixed;
+    z-index: 2;
+    bottom: 68px;
+    right: 15px;
+    visibility: visible;
+  }
+}
+
 /* Footer ends */
+
+/*======= Mobile Nav ========= */
+#Mobile-nav {
+  display: none;
+  font-family: "Poppins";
+}
+.dropdown-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.dropdown-h4 a {
+  text-decoration: none;
+  color: black;
+}
+.dropdown-contact a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+.dropdown-contact {
+  background-color: black;
+  color: #f1f1f1;
+  border-radius: 25px;
+  padding: 14px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+.dropdown-contact h4 {
+  margin-bottom: 0;
+}
+.dropbtn {
+  color: black;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content-1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content-1 a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  top: -180px;
+}
+.dropdown:hover .dropdown-content-1 {
+  display: block;
+  top: -180px;
+  right: 0px;
+}
+@media (min-width: 320px) {
+  #Mobile-nav {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    height: 8vh;
+    background-color: #f1f1f1;
+  }
+  .dropbtn {
+    padding: 0;
+    font-size: 8px;
+  }
+  .dropdown-img {
+    width: 100px;
+  }
+  .dropdown-h4 h4 {
+    font-size: 10px;
+  }
+  .dropdown-contact h4 {
+    font-size: 10px;
+  }
+  .dropdown-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #navbar {
+    display: none;
+  }
+}
+@media (min-width: 600px) {
+  #Mobile-nav {
+    display: none;
+  }
+  #navbar {
+    display: block;
+  }
+}
