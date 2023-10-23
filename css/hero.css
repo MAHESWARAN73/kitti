@@ -37,7 +37,16 @@
 .hero-card {
   padding: 20px;
 }
-
+@media (min-width: 320px) {
+  .hero-nav {
+    margin-top: 0;
+  }
+}
+@media (min-width: 600px) {
+  .hero-nav {
+    margin-top: 12rem;
+  }
+}
 /* #myCarousel {
         margin-top: 50px;
     } */

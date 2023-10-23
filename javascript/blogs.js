@@ -3,17 +3,16 @@ const carousel = document.querySelector(".moving");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".wrapper i");
 const carouselChildrens = [...carousel.children];
+const blogPara = document.querySelector(".blogPara");
 
-let isDragging = false,
-  isAutoPlay = true,
-  startX,
-  startScrollLeft,
-  timeoutId;
+let isDragging = false;
+let isAutoPlay = true;
+let startX;
+let startScrollLeft;
+let timeoutId;
 
-// Get the number of cards that can fit in the carousel at once
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
-// Insert copies of the last few cards to beginning of carousel for infinite scrolling
 carouselChildrens
   .slice(-cardPerView)
   .reverse()
@@ -21,34 +20,30 @@ carouselChildrens
     carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
   });
 
-// Insert copies of the first few cards to end of carousel for infinite scrolling
 carouselChildrens.slice(0, cardPerView).forEach((card) => {
   carousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
 
-// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
 carousel.classList.add("no-transition");
 carousel.scrollLeft = carousel.offsetWidth;
 carousel.classList.remove("no-transition");
 
-// Add event listeners for the arrow buttons to scroll the carousel left and right
 arrowBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+    updateBlogPara(btn.id); // Pass the id of the clicked arrow (left or right)
   });
 });
 
 const dragStart = (e) => {
   isDragging = true;
   carousel.classList.add("dragging");
-  // Records the initial cursor and scroll position of the carousel
   startX = e.pageX;
   startScrollLeft = carousel.scrollLeft;
 };
 
 const dragging = (e) => {
-  if (!isDragging) return; // if isDragging is false return from here
-  // Updates the scroll position of the carousel based on the cursor movement
+  if (!isDragging) return;
   carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
 };
 
@@ -58,14 +53,11 @@ const dragStop = () => {
 };
 
 const infiniteScroll = () => {
-  // If the carousel is at the beginning, scroll to the end
   if (carousel.scrollLeft === 0) {
     carousel.classList.add("no-transition");
     carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
     carousel.classList.remove("no-transition");
-  }
-  // If the carousel is at the end, scroll to the beginning
-  else if (
+  } else if (
     Math.ceil(carousel.scrollLeft) ===
     carousel.scrollWidth - carousel.offsetWidth
   ) {
@@ -74,15 +66,16 @@ const infiniteScroll = () => {
     carousel.classList.remove("no-transition");
   }
 
-  // Clear existing timeout & start autoplay if mouse is not hovering over carousel
   clearTimeout(timeoutId);
   if (!wrapper.matches(":hover")) autoPlay();
 };
 
 const autoPlay = () => {
-  if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-  // Autoplay the carousel after every 2500 ms
-  timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
+  if (window.innerWidth < 800 || !isAutoPlay) return;
+  timeoutId = setTimeout(() => {
+    carousel.scrollLeft += firstCardWidth;
+    updateBlogPara("right"); // Simulate a right arrow click when autoPlay scrolls
+  }, 2500);
 };
 autoPlay();
 
@@ -92,3 +85,27 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+function updateBlogPara(arrowDirection) {
+  const visibleCard = [...carousel.children].find((card) => {
+    const cardRect = card.getBoundingClientRect();
+    const carouselRect = carousel.getBoundingClientRect();
+    return (
+      cardRect.left >= carouselRect.left && cardRect.right <= carouselRect.right
+    );
+  });
+
+  let updatedCard = visibleCard;
+  if (arrowDirection === "left") {
+    // Find the card to the left of the currently visible card
+    updatedCard = visibleCard.previousElementSibling;
+  } else if (arrowDirection === "right") {
+    // Find the card to the right of the currently visible card
+    updatedCard = visibleCard.nextElementSibling;
+  }
+
+  if (updatedCard) {
+    blogPara.textContent =
+      updatedCard.querySelector(".blog-content").textContent;
+  }
+}

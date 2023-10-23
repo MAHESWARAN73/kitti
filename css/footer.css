@@ -138,4 +138,7 @@ button {
     right: 15px;
     visibility: visible;
   }
+  .icons {
+    margin-right: 5px;
+  }
 }
