@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+}
+/* ========== navbar start ========= */
+#navbar {
+  /* position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 130px;
+  top: 0;
+  background-color: #f1f1f1;
+  background-attachment: fixed; */
+}
+.nav-item {
+  font-family: "Montserrat", sans-serif;
+}
+.collapse {
+  margin-right: 30px;
+}
+.btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+}
+.nav-item {
+  margin-right: 28px;
+}
+.navbar-toggler {
+  /* position: fixed;
+      z-index: 1;
+      right: 10px;
+      top: 56px; */
+}
+
+.nav-item img {
+  width: 15.84px;
+  height: 17.1px;
+  margin-left: 5px;
+}
+.nav-link:hover {
+  text-decoration: none;
+}
+.navbar-nav {
+  align-items: center;
+}
+/* ========== navbar end ========= */
+
+/* ===== hero blogpage ==== */
+.blog-her0-img {
+  background: url(../images/Rectangle\ 6.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.blog-hero-content h1 {
+  font-family: Houschka-medium;
+  font-style: normal;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  color: #fff;
+  margin-bottom: 2pc;
+  width: 75%;
+}
+.blog-hero-content {
+  width: 60%;
+  margin-left: 2rem;
+}
