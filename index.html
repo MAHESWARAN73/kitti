@@ -40,8 +40,11 @@
     <link rel="stylesheet" href="css/Industries_Homepage.css" />
     <link rel="stylesheet" href="css/ourservice.css" />
     <link rel="stylesheet" href="css/sustainable.css" />
+    <link rel="stylesheet" href="./css/enquiry.css">
+
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/blogs.css" />
+    <link rel="stylesheet" href="firebase/enquiry.js">
   </head>
 
   <body>
@@ -101,19 +104,8 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="industrises.html"
-                      >Industries</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="service.html"
-                      >Services</a
-                    >
-                  </li>
-                  
 
-                  <!-- <li class="nav-item dropdown">
+                  <li class="nav-item dropdown">
                     <a
                       class="nav-link"
                       href="#"
@@ -126,13 +118,13 @@
                     </a>
 
                     <ul class="dropdown-menu p-0">
-                      <li class="nav-item">
-                        <a class="nav-link" href="industrises.html"
+                      <li>
+                        <a class="dropdown-item" href="industrises.html"
                           >Industries</a
                         >
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="service.html"
+                      <li>
+                        <a class="dropdown-item" href="service.html"
                           >Services</a
                         >
                       </li>
@@ -141,13 +133,13 @@
                           >Products</a
                         >
                       </li>
-                      <li>
+                      <!-- <li>
                         <a class="dropdown-item" href="#"
                           >Research & Invovation</a
                         >
-                      </li>
+                      </li> -->
                     </ul>
-                  </li> -->
+                  </li>
 
                   <!-- <li class="nav-item dropdown">
                     <a
@@ -167,18 +159,18 @@
                       </li>
                     </ul>
                   </li> -->
-                  <!-- <li class="nav-item">
+                  <li class="nav-item">
                     <a
                       class="nav-link active"
                       aria-current="page"
                       href="career.html"
                       style="color: #000000a6"
                       >Careers
-                       <img src="images/arrow.png" alt="" />
+                      <!-- <img src="images/arrow.png" alt="" /> -->
                     </a>
-                  </li> -->
+                  </li>
 
-                  <!-- <li class="nav-item dropdown">
+                  <li class="nav-item dropdown">
                     <a
                       class="nav-link"
                       href="#"
@@ -205,7 +197,7 @@
                         >
                       </li>
                     </ul>
-                  </li> -->
+                  </li>
                   <a href="contact.html">
                     <button type="button" class="btn btn-dark">
                       Contact us
@@ -290,7 +282,7 @@
           >
             <div class="carousel-inner" id="Hero_inner">
               <div class="carousel-item active" id="Hero_item">
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="card card-body">
                     <a href="">
                       <img class="img-fluid" src="images/hero-sec 1.png" />
@@ -304,7 +296,7 @@
                 </div>
               </div>
               <div class="carousel-item" id="Hero_item">
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="card card-body">
                     <a href="">
                       <img class="img-fluid" src="images/hero-sec 2.png" />
@@ -317,7 +309,7 @@
                 </div>
               </div>
               <div class="carousel-item" id="Hero_item">
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="card card-body">
                     <img class="img-fluid" src="images/hero-sec 3.png" />
                     <p class="tet">Transforming Ideas into Tech Realities</p>
@@ -325,7 +317,7 @@
                 </div>
               </div>
               <div class="carousel-item" id="Hero_item">
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="card card-body">
                     <img class="img-fluid" src="images/hero-sec 1.png" />
                     <p class="tet">Your Path to Tech Brilliance Begins Here</p>
@@ -333,7 +325,7 @@
                 </div>
               </div>
               <div class="carousel-item" id="Hero_item">
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="card card-body">
                     <img class="img-fluid" src="images/hero-sec 2.png" />
                     <p class="tet">
@@ -345,7 +337,7 @@
                 </div>
               </div>
               <div class="carousel-item" id="Hero_item">
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="card card-body">
                     <img class="img-fluid" src="images/hero-sec 3.png" />
                     <p class="tet">
@@ -356,7 +348,7 @@
                 </div>
               </div>
               <div class="carousel-item" id="Hero_item">
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="card card-body">
                     <img class="img-fluid" src="images/hero-sec 1.png" />
                     <p class="tet">Transforming Ideas into Tech Realities</p>
@@ -364,7 +356,7 @@
                 </div>
               </div>
               <div class="carousel-item" id="Hero_item">
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="card card-body">
                     <img class="img-fluid" src="images/hero-sec 2.png" />
                     <p class="tet">Your Path to Tech Brilliance Begins Here</p>
@@ -1706,6 +1698,106 @@
     </div>
 
     <!--Sustaninable end-->
+    
+    <!-- Enquiry start-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 Enquiry-sec">
+          <div class="Enquiry-content reveal">
+            <h1 class="mb-3 mt-5" style="font-weight: 400">
+              HAVE A PROJECT<br />
+              IN MIND?
+            </h1>
+            <div class="col-md-7">
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Integer gravida amet
+                nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc duis
+                libero morbi id.
+              </p>
+            </div>
+          </div>
+
+          <div class="Enquiry-content-1 reveal">
+            <h5 class="" style="font-weight: 700">Address</h5>
+            <div class="col-md-7">
+              <address>
+                Block Q, No: 24/20, 1’st Floor, Thirumangalam Rd, Block Q,
+                Agathiyar Nagar, Anna Nagar, Chennai, Tamil Nadu 600049
+              </address>
+            </div>
+
+            <div class="">
+              <h5 class="" style="font-weight: 700">Email</h5>
+              <p>support@kittivaasal.com</p>
+            </div>
+
+            <div class="mb-5">
+              <h5 class="" style="font-weight: 700">Phone Number</h5>
+              <p>9585894492</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 Enquiry-sec-1">
+          <div class="Enquiry-content-2">
+            <!-- <h1 class="mb-3 mt-5" style="font-weight: 400">CONTACT US</h1> -->
+            <div class="Enquiry-form reveal">
+              <form>
+                <div class="form-box px-4">
+                  <div class="form-value">
+                    <form action="">
+                      <div class="text-start mt-5" style="color: white">
+                        <h1 class="fw-normal" style="letter-spacing: 2px">
+                          Enquiry Now
+                        </h1>
+                      </div>
+                      <div class="d-flex">
+                       
+                        <div class="inputbox ">
+                          <input type="text" placeholder="Enter your Full name" required="">
+                          <label for="">Name</label>
+                        </div>
+                        <div class="inputbox ms-5">
+                          <input type="text" placeholder="Enter your Number" required="">
+                          <label for="" >Contact</label>
+                        </div>
+                   
+                      </div>
+
+                      <div class="inputbox">
+                        <input
+                          type="email"
+                          placeholder="Enter your Email"
+                          required
+                        />
+                        <label for="">Email</label>
+                      </div>
+                      <div class="inputbox">
+                        <textarea
+                          rows="6"
+                          cols="50"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                      <div class="buttons">
+                        <a href="">
+                          <button type="button" class="bts">
+                            Send Message
+                          </button>
+                        </a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="Enquiry-sec-1-ellise">
+            <img src="images/Ellipse 13 (1).png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Enquiry end-->
 
     <!--Footer start-->
     <div class="container-fluid footer-sec pt-5">
