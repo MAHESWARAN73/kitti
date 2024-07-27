@@ -1741,7 +1741,9 @@
           <div class="Enquiry-content-2">
             <!-- <h1 class="mb-3 mt-5" style="font-weight: 400">CONTACT US</h1> -->
             <div class="Enquiry-form reveal">
-              <form>
+
+              <form action="" id="contactForm">
+                <div class="alert">Your message sent</div>
                 <div class="form-box px-4">
                   <div class="form-value">
                     <form action="">
@@ -1753,11 +1755,11 @@
                       <div class="d-flex">
                        
                         <div class="inputbox ">
-                          <input type="text" placeholder="Enter your Full name" required="">
+                          <input type="text" id="name-input" placeholder="Enter your Full name" required="">
                           <label for="">Name</label>
                         </div>
                         <div class="inputbox ms-5">
-                          <input type="text" placeholder="Enter your Number" required="">
+                          <input type="text" id="Number" placeholder="Enter your Number" required="">
                           <label for="" >Contact</label>
                         </div>
                    
@@ -1765,14 +1767,15 @@
 
                       <div class="inputbox">
                         <input
-                          type="email"
+                          type="email" id="emailid-input"
                           placeholder="Enter your Email"
                           required
-                        />
+                          />
                         <label for="">Email</label>
                       </div>
                       <div class="inputbox">
-                        <textarea
+                        <textarea 
+                        id="msgContent"
                           rows="6"
                           cols="50"
                           placeholder="Message"
@@ -1901,5 +1904,65 @@
     <script src="javascript/blogs.js" defer></script>
     <script src="javascript/hero.js"></script>
     <script src="javascript/animation.js"></script>
+    <!-- <script src="firebase/enquiry.js"></script> -->
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+        import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js";
+        // import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js"; // Commented out for testing
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBuDVWInt9XbnPBAb5l7RUTr7TrdglHJEk",
+          authDomain: "kittivaasal-website.firebaseapp.com",
+          databaseURL: "https://kittivaasal-website-default-rtdb.firebaseio.com",
+          projectId: "kittivaasal-website",
+          storageBucket: "kittivaasal-website.appspot.com",
+          messagingSenderId: "4222968083",
+          appId: "1:4222968083:web:408956f42f035b096bfae6"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        // const analytics = getAnalytics(app); // Commented out for testing
+        const database = getDatabase(app);
+        const contactFormDB = ref(database, 'contactForm');
+      
+        document.getElementById("contactForm").addEventListener("submit", submitForm);
+      
+        function submitForm(e) {
+          e.preventDefault();
+      
+          var name = getElementVal("name-input");
+          var emailid = getElementVal("emailid-input");
+          var msgContent = getElementVal("msgContent");
+      
+          saveMessages(name, emailid, msgContent);
+      
+          document.querySelector(".alert").style.display = "block";
+      
+          setTimeout(() => {
+            document.querySelector(".alert").style.display = "none";
+          }, 3000);
+      
+          document.getElementById("contactForm").reset();
+        }
+      
+        const saveMessages = (name, emailid, msgContent) => {
+          const newContactForm = push(contactFormDB);
+      
+          set(newContactForm, {
+            name: name,
+            emailid: emailid,
+            msgContent: msgContent,
+          });
+        };
+      
+        const getElementVal = (id) => {
+          return document.getElementById(id).value;
+        };
+      </script>
+      
   </body>
 </html>

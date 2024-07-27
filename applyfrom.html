@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="./css/applyfrom.css">
+</head>
+<body>
+    <div class="job-listing">
+        <div class="job-details">
+            <h1>UI/UX Designer</h1>
+            <p>On site</p>
+            <button id="applyBtn">Apply Now</button>
+        </div>
+        <div class="job-description">
+            <h2>ABOUT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Integer gravida amet nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc duis libero morbi id. Lorem ipsum dolor sit amet consectetur...</p>
+            <h2>JOB DESCRIPTION</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur...</li>
+                <li>Lorem ipsum dolor sit amet consectetur...</li>
+                <li>Lorem ipsum dolor sit amet consectetur...</li>
+            </ul>
+            <h2>ABOUT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Integer gravida amet nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc duis libero morbi id. Lorem ipsum dolor sit amet consectetur...</p>
+            <h2>JOB DESCRIPTION</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur...</li>
+                <li>Lorem ipsum dolor sit amet consectetur...</li>
+                <li>Lorem ipsum dolor sit amet consectetur...</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Job Application Form</h2>
+            <form action="/submit_application" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="position">Position Applying For:</label>
+               
+                    <select id="position" name="position" required>
+                        <option value="UI/UX Designer">UI/UX Designer</option>
+                        <option value="Project Manager">Project Manager</option>
+                        <option value="Frontend Designer">Frontend Designer</option>
+                        <option value="Sales and Marketing Apprentice">Sales and Marketing Apprentice</option>
+                        <option value="Frontend Developer">Frontend Developer</option>
+                
+                </select>
+                
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+                
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("modal");
+    var btn = document.getElementById("applyBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "flex";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});
+    </script>
+
+
+</body>
+</html>

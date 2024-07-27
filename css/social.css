@@ -6,6 +6,9 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.p5{
+  color: black !important;
+}
 /* Navbar */
 /* #navbar {
   position: fixed;
@@ -27,12 +30,12 @@
 .nav-item {
   margin-right: 28px;
 }
-.navbar-toggler {
+/* .navbar-toggler { */
   /* position: fixed;
     z-index: 1;
     right: 10px;
     top: 56px; */
-}
+/* } */
 
 .nav-item img {
   width: 15.84px;

@@ -7,6 +7,9 @@
   box-sizing: border-box;
   /* font-family: "Poppins", sans-serif; */
 }
+.p2{
+  color: black !important;
+}
 /* .our-sec {
   display: flex;
   padding: 0 35px;

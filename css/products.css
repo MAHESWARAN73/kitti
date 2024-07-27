@@ -7,6 +7,9 @@
 body {
   background-color: #f1f1f1;
 }
+.p1{
+  color: black !important;
+}
 
 /* Navbar */
 .nav-item {
