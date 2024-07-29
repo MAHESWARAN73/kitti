@@ -134,7 +134,7 @@
   #Hero_inner.carousel-inner #Hero_item.carousel-item-left.active,
   #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end),
   .active#Hero_item.carousel-item-start,
-  #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end) {
+#Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end) {
     transform: translateX(-25%) !important;
   }
 

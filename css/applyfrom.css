@@ -3,21 +3,39 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    padding: 30px;
     display: flex;
+    top: 252px;
+    left: 960px;
+    border-radius: 30px 0px 0px 0px;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+
+    
+  
 
 .job-listing {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(27, 28, 30, 1);
     width: 80%;
     overflow: hidden;
+    height: 75vh; */
+     width: 860px;
+    height: 100vh;
+    top: 252px;
+    left: 960px;
+    gap: 0px;
+    border-radius: 30px 0px 0px 0px;
+    opacity: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+
+} 
 }
 
 .job-details {
@@ -132,3 +150,6 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+
+
