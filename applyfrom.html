@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
     <link rel="stylesheet" href="./css/applyfrom.css">
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <!-- <link rel="stylesheet" href="./css/nav.css"> -->
+    <!-- <link rel="stylesheet" href="./css/footer.css"> -->
+    <!-- <link rel="stylesheet" href="css/career.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -56,7 +59,7 @@
 </head>
 <body>
 
-    <section>
+    <!-- <section>
         <nav class="navbar" id="navbar">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -142,11 +145,7 @@
                             >Products</a
                           >
                         </li>
-                        <!-- <li>
-                          <a class="dropdown-item" href="#"
-                            >Research & Invovation</a
-                          >
-                        </li> -->
+
                       </ul>
                     </li>
                     <li class="nav-item">
@@ -203,10 +202,10 @@
             </nav>
           </div>
         </nav>
-      </section>
+      </section> -->
 
       <!--Mobile navbar start-->
-      <div class="container-fluid p-0" id="Mobile-nav">
+      <!-- <div class="container-fluid p-0" id="Mobile-nav">
         <div class="dropdown-cont">
           <div class="dropdown">
             <h4 class="dropbtn">Who we are</h4>
@@ -249,45 +248,38 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-
-
-    <div class="job-listing">
+<div class="main">
+  <div class="job-listing">
+    <div class="row">
+      <div class="col-md-6 ">
         <div class="job-details">
-            <h1>UI/UX Designer</h1>
-            <p>On site</p>
-            <button id="applyBtn">Apply Now</button>
-        </div>
-        <div class="job-listing">
-            <div class="job-details">
-                <h2>project Manager</h2>
-                <p>On site</p>
-                <a href="career.html">
-                <button id="Manager">Apply Now</button>
-                </a>
-            </div>
-        <div class="job-description">
-            <h2>ABOUT</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Integer gravida amet nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc duis libero morbi id. Lorem ipsum dolor sit amet consectetur...</p>
-            <h2>JOB DESCRIPTION</h2>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur...</li>
-                <li>Lorem ipsum dolor sit amet consectetur...</li>
-                <li>Lorem ipsum dolor sit amet consectetur...</li>
-            </ul>
-            <h2>ABOUT</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Integer gravida amet nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc duis libero morbi id. Lorem ipsum dolor sit amet consectetur...</p>
-            <h2>JOB DESCRIPTION</h2>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur...</li>
-                <li>Lorem ipsum dolor sit amet consectetur...</li>
-                <li>Lorem ipsum dolor sit amet consectetur...</li>
-            </ul>
-        </div>
-    </div>
+          <h1>UI/UX Designer</h1>
+          <p>On site</p>
 
-    <div id="modal" class="modal">
+         <input type="button" class="bg-black text-white w-50 mt-5" id="applyBtn" value="Apply Now"></input>
+        </div>
+      </div> 
+      <div class="col-md-6 ">
+        <div class="job-container ">
+            <h2 class="text-white">ABOUT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Integer gravida amet nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc duis libero morbi id. Lorem ipsum dolor sit amet consectetur...</p>
+            <h2>JOB DESCRIPTION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Integer gravida amet nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc duis libero morbi id. Lorem ipsum dolor sit amet consectetur...</p>
+            <h2>ABOUT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Integer gravida amet nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc duis libero morbi id. Lorem ipsum dolor sit amet consectetur...</p>
+            <h2>JOB DESCRIPTION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Integer gravida amet nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc duis libero morbi id. Lorem ipsum dolor sit amet consectetur...</p>
+        </div>
+      </div>   
+   
+</div>
+</div>
+</div>
+
+
+     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Job Application Form</h2>
@@ -318,7 +310,262 @@
                 <button type="submit">Submit Application</button>
             </form>
         </div>
-    </div>
+    </div> 
+    
+      <!--Why work with us section-->
+       <!-- <section>
+        <div class="workWith">
+          <div class="workInside container">
+            <div class="row">
+              <div class="col-md-5 col-sm-12 p-0 reveal">
+                <div class="working">
+                  <div class="workHeading">
+                    <h1 style="width: 300px">WHY WORK WITH US?</h1>
+                  </div>
+                  <div class="workPara">
+                    <p style="line-height: 28px">
+                      Lorem ipsum dolor sit amet consectetur. Integer gravida
+                      amet nisi id hac nisi scelerisque ut. Sollicitudin egestas
+                      nunc duis libero morbi id.
+                    </p>
+                    <p style="line-height: 28px">
+                      Lorem ipsum dolor sit amet consectetur. Integer gravida
+                      amet nisi id hac nisi scelerisque ut. Sollicitudin egestas
+                      nunc duis libero morbi id. Lorem ipsum dolor sit amet
+                      consectetur. Integer gravida amet nisi id hac nisi
+                      scelerisque ut. Sollicitudin egestas nunc duis libero
+                      morbi id.Lorem ipsum dolor sit amet consectetur. Integer
+                      gravida amet nisi id hac nisi scelerisque ut. Sollicitudin
+                      egestas nunc duis libero morbi id.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="hidingImg col-md-4 col-sm-6 p-0 reveal"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <div class="workPic col-md-10">
+                  <img
+                    class="imgWork"
+                    style="width: 100%"
+                    src="images/Rectangle 103.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div
+                class="hidingImg col-md-3 col-sm-6 p-0 reveal"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                <div class="workDouble">
+                  <div class="row">
+                    <img
+                      class="imgWork"
+                      style="width: 100%; padding: 15px 15px 15px 5px"
+                      src="images/Rectangle 102.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="row">
+                    <img
+                      class="imgWork"
+                      style="width: 100%; padding: 15px 15px 15px 5px"
+                      src="images/Rectangle 102.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 carousalSM">
+                <div
+                  id="carouselExampleIndicators"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="images/Rectangle 103.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="images/Rectangle 103.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="images/Rectangle 103.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev career-btn"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next career-btn"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="ellipseC" src="images/Ellipse 19 (1).png" alt="" />
+        </div>
+      </section> -->
+
+
+     <!--Footer start-->
+     <!-- <div class="container-fluid footer-sec pt-5">
+      <div class="row">
+        <div class="col-md-3">
+          <div
+            class="footer-img"
+            style="display: flex; justify-content: center"
+          >
+            <a href=""><img src="images/Kitti-logo.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="">
+            <h4 class="footer-h1">Contact Us</h4>
+            <div class="">
+              Block Q, No: 24/20, 1’st Floor, Thirumangalam Rd, Block Q,
+              Agathiyar Nagar, Anna Nagar, Chennai, Tamil Nadu 600049
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 footer-last">
+          <div class="footer-h6">
+            <h6 class="footer-h7"><a href="#who">WHO WE ARE</a></h6>
+            <h6 class="footer-h7"><a href="#who">WHAT WE DO</a></h6>
+            <h6 class="footer-h7 me-4"><a href="#who">CARRERS</a></h6>
+            <h6 class="footer-h7 me-4"><a href="#who">INSIGHTS</a></h6>
+          </div>
+        </div>
+        <div class="col-md-3 mt-4 footer-face">
+          <div class="">
+            <h6 class="footer-h1">Follow Us</h6>
+            <div class="footer-icon">
+              <div class="icons">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/KittivaasalTechnologies "
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </div>
+              <div class="icons">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/72292780/admin/feed/posts/"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div class="icons">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/kittivaasal_technologies/?fbclid=IwAR3nOGM1xZ1SCSaj5D0SQJ2dC_vnuWBMibkZ-DMtJaMuX-M0NphfARWlwKQ"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+              <div class="icons">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=WhBlvyJ-nFM&t=3s"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img src="images/Footer image.png" alt="" width="100%" />
+        </div>
+        <div class="footer-up">
+          <a href="#navbar"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="container-fluid" id="footer-next">
+      <div class="footer-next-1">
+        <img src="images/black.png" alt="" />
+      </div>
+    </div> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript/animation.js"></script>
+  </div>
+
+
+
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
     var modal = document.getElementById("modal");
