@@ -53,18 +53,15 @@
   width: 90%;
   background-color: transparent;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 .inputbox {
   position: relative;
   margin: 50px 0 0 0;
   width: 100%;
-  /* border-bottom: 2px solid white; */
 }
 .inputbox label {
   position: absolute;
-  /* top: 50%; */
   left: 5px;
   transform: translateY(-20%);
   color: white;
@@ -72,10 +69,9 @@
   pointer-events: none;
   transition: 0.5s;
   left: 0;
-  /* font-weight: bolder; */
 }
 input:focus ~ label,
-input:focus ~ :valid {
+input:valid ~ label {
   top: -5px;
 }
 .inputbox input {
@@ -86,15 +82,28 @@ input:focus ~ :valid {
   border-bottom: 1px solid white;
   outline: none;
   font-size: 15px;
-  /* padding: 0 35px 0 35px; */
   color: white;
   padding-top: 20px;
   margin: 10px 0;
 }
+/* validate */
+.inputbox.error input,
+.inputbox.error textarea {
+  border-bottom: 1px solid red;
+}
+
+.inputbox:not(.error) input:focus,
+.inputbox:not(.error) textarea:focus {
+  border-bottom: 1px ;
+}
+.err-msg {
+  font-size: 10px;
+  color: red;
+}
+
 .form-value {
   text-align: left;
   width: 70%;
-  /* margin-right: 92px; */
 }
 .buttons {
   width: 40%;
@@ -111,8 +120,6 @@ input:focus ~ :valid {
   border: none;
   outline: none;
   margin-top: 40px;
-  /* position: relative;
-    left: 50px; */
 }
 
 @media (max-width: 768px) {
@@ -149,7 +156,6 @@ input:focus ~ :valid {
 }
 .footer-h6 {
   text-align: left;
-  /* text-align: center; */
 }
 .footer-subcribe {
   border: 1px solid gray;
@@ -165,7 +171,6 @@ button {
   border-radius: 25px;
 }
 .footer-subcribe input {
-  /* width: 285px; */
   padding: 12px;
 }
 .footer-btn {
@@ -180,8 +185,6 @@ button {
 }
 .footer-icon {
   display: flex;
-
-  /* justify-content: space-evenly; */
 }
 .icons {
   background: black;
@@ -228,17 +231,12 @@ button {
 /* ======== Footer next start========== */
 .footer-next-1 {
   background-color: #f1f1f1;
-  /* height: 8vh; */
   display: none;
 }
 /* ======== Footer next end========== */
 
 @media (min-width: 320px) {
   .footer-up i {
-    /* position: fixed;
-    z-index: 2;
-    bottom: 68px;
-    right: 28px; */
     visibility: hidden;
   }
   .footer-last {
@@ -272,5 +270,3 @@ button {
     visibility: visible;
   }
 }
-
-/* Footer ends */
