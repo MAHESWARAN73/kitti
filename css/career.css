@@ -87,15 +87,17 @@
   color: #ff7715;
   font-size: 27px;
   font-weight: bolder;
+  
 }
 .roleHeading p {
-  height: 70px;
+  height: 30px;
   display: flex;
   align-items: center;
 }
 .details {
   color: #8f8f8f;
   font-size: 20px;
+  
 }
 .detailBold {
   color: #1b1c1e;
