@@ -9,6 +9,9 @@ body {
 .nav-item {
   font-family: "Montserrat", sans-serif;
 }
+.p1 {
+  color: black;
+}
 .collapse {
   margin-right: 30px;
 }

@@ -30,7 +30,7 @@
 
 //     }
 //     //email validate//
-//     let emailRegex= kjhgfdfghjklhgf ;
+//     let emailRegex=  ;
 //     let emailvalue = email.value;
 //     if(!emailRegex.test(emailvalue)){
 //         giveError(email,"please enter a valid email");
@@ -92,6 +92,8 @@ form.addEventListener("submit", (e) => {
 
     // valid submit form
     alert("Message successfully sent");
+    
+
 });
 
 const validateForm = (form) => {

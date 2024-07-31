@@ -59,12 +59,14 @@
   position: relative;
   margin: 50px 0 0 0;
   width: 100%;
+  background-color: transparent;
+  
 }
 .inputbox label {
   position: absolute;
   left: 5px;
   transform: translateY(-20%);
-  color: white;
+  color: white; 
   font-size: 20px;
   pointer-events: none;
   transition: 0.5s;
