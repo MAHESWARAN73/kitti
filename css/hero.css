@@ -5,14 +5,12 @@
   font-weight: 600;
   color: #1b1c1e;
   overflow: hidden;
-  
-
+  width: fit-content;
 }
 @media (max-width: 400px) {
   #madhu {
     font-size: 22px;
     margin-left: 30px;
-    
   }
 }
 .card {
@@ -29,7 +27,6 @@
   font-weight: 500;
   padding: 0 20%;
   color: white;
-  
 }
 .tets {
   position: absolute;
@@ -127,19 +124,19 @@
   display: flex;
   column-gap: 5px;
 }
-/* 
+
 @media (min-width: 768px) {
   #Hero_inner.carousel-inner #Hero_item.carousel-item-right.active,
   #Hero_inner.carousel-inner #Hero_item.carousel-item-next,
   #Hero_item.carousel-item-next:not(#Hero_item.carousel-item-start) {
-    transform: translateX(15%) !important;
+    transform: translateX(25%) !important;
   }
 
   #Hero_inner.carousel-inner #Hero_item.carousel-item-left.active,
   #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end),
   .active#Hero_item.carousel-item-start,
-#Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end) {
-    transform: translateX(-15%) !important;
+  #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end) {
+    transform: translateX(-25%) !important;
   }
 
   #Hero_item.carousel-item-next#Hero_item.carousel-item-start,
@@ -149,9 +146,9 @@
 
   #Hero_inner.carousel-inner #Hero_item.carousel-item-prev,
   #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end) {
-    transform: translateX(-15%) !important;
+    transform: translateX(-25%) !important;
   }
-} */
+}
 .bo {
   position: absolute;
   left: 42px;
@@ -200,4 +197,3 @@
 #Hero_inner.carousel-inner #Hero_item.carousel-item > div:first-child p {
   display: none;
 }
-
