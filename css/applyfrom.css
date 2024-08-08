@@ -19,9 +19,31 @@ body {
 height: 600px;
 gap: 0px;
 opacity: 0px;
+vertical-align: middle;
     background: rgba(241, 241, 241, 1);
 
  }
+ 
+.gImg {
+  position: absolute;
+  z-index: 0;
+  width: 220px;
+  height: 270px;
+  right: 0px;
+  /* top: -100px; */
+gap: 0px;
+opacity: 0.6px;
+
+  
+}
+
+@media (max-width: 750px) {
+  .gImg {
+      width: 140px;
+      height: 230px;
+      top: 55%;
+  }
+}
 
 /* .job-listing {
      display: flex;
@@ -390,7 +412,7 @@ background: rgba(255, 255, 255, 1);
   
   /* ============= footer start =========== */
   .footer-img img {
-    width: 200px;
+    width: 240px;
   }
   .footer-h1 {
     color: #8f8f8f;
