@@ -18,9 +18,30 @@
   top: 0;
   height: fit-content;
   background-color: var(--color-black);
+  font-family: "Montserrat", sans-serif;
+font-size: 5px;
+font-weight: 400;
+/* line-height: 36px; */
+letter-spacing: 0.04em;
+text-align: left; 
+padding-left: 4%;
+margin-left: 5px;
 }
 
-
+/* .button {
+  font-family: "Montserrat", sans-serif !important;
+  color: black;
+  padding: 6px 12px;
+  width: 130px;
+  height: 40px;
+  background-color: #f1f1f1;
+} */
+.btn {
+  font-family: "Montserrat", sans-serif !important;
+  width: 230px;
+  height: 140px;
+  border-radius: 120px;
+}
 
 .nav-item {
   font-family: "Montserrat", sans-serif;
