@@ -163,105 +163,6 @@
       </nav>
     </div>
     <!-- Navbar ends -->
-
-    <!-- Contact starts -->
-    <!-- <div class="container-fluid text-center">
-      <div class="row align-items-start">
-        <div class="col-md-6 col-sm-12 p-0">
-          <div class="left"> -->
-            <!-- <img src='images/Rectangle 6 (2).png' -->
-            <!-- <div class="container">
-              <div class="head text-start mx-4" style="color: white">
-                <h1
-                  class="fw-normal"
-                  style="
-                    letter-spacing: 1px;
-                    padding-top: 40px;
-                    padding-bottom: 20px;
-                  "
-                >
-                  HAVE A PROJECT <br />
-                  IN MIND?
-                </h1>
-              </div>
-              <div
-                class="lefts text-start mx-4 col-md-8 col-sm-12"
-                style="color: white"
-              >
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Integer gravida amet
-                  nisi id hac nisi scelerisque ut. Sollicitudin egestas nunc
-                  duis libero morbi id.
-                </p>
-              </div>
-              <div
-                class="addr text-start mx-4 col-md-8 col-sm-12"
-                style="color: white; margin-top: 10%"
-              >
-                <h4 class="fw-bold">Address</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Integer gravida amet
-                  nisi id hac nisi scelerisque ut
-                </p>
-                <h4 class="fw-bold">Email</h4>
-                <p>kittivaasal@gmail.com</p>
-                <h4 class="fw-bold">Phone Number</h4>
-                <p>9876543221</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12 p-0">
-          <div class="right">
-            <div class="container">
-              <form>
-                <div class="form-box px-4">
-                  <div class="form-value">
-                    <form action="">
-                      <div class="text-start mt-5" style="color: white">
-                        <h1 class="fw-normal" style="letter-spacing: 2px">
-                          CONTACT US
-                        </h1>
-                      </div>
-                      <div class="inputbox">
-                        <input
-                          type="text"
-                          placeholder="Enter your Full name"
-                          required
-                        />
-                        <label for="">Name</label>
-                      </div>
-                      <div class="inputbox">
-                        <input
-                          type="email"
-                          placeholder="Enter your Email"
-                          required
-                        />
-                        <label for="">Email</label>
-                      </div>
-                      <div class="inputbox">
-                        <input
-                          type="text"
-                          placeholder="Enter your Project Details"
-                          required
-                        />
-                        <label for="">Details</label>
-                      </div>
-                      <div class="buttons">
-                        <button type="button" class="bts">Send Message</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <img class="ell1" src="images/Ellipse 13 (4).png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Contact ends -->
-
     <!-- Contact starts -->
 <div class="container-fluid text-center">
   <div class="row align-items-start">
@@ -294,32 +195,31 @@
     <div class="col-md-6 col-sm-12 p-0">
       <div class="right">
         <div class="container">
-          <form>
+          <form id="contactForm">
             <div class="form-box px-4">
               <div class="form-value">
-                <form action="">
-                  <div class="text-start mt-5" style="color: white">
-                    <h1 class="fw-normal" style="letter-spacing: 2px">CONTACT US</h1>
-                  </div>
-                  <div class="inputbox">
-                    <input type="text" name="name" placeholder="Enter your Full name" required />
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="inputbox">
-                    <input type="email" name="email" placeholder="Enter your Email" required />
-                    <label for="email">Email</label>
-                  </div>
-                  <div class="inputbox">
-                    <input type="text" name="details" placeholder="Enter your Project Details" required />
-                    <label for="details">Details</label>
-                  </div>
-                  <div class="buttons">
-                    <button type="submit" class="bts">Send Message</button>
-                  </div>
-                </form>
+                <div class="text-start mt-5" style="color: white">
+                  <h1 class="fw-normal" style="letter-spacing: 2px">CONTACT US</h1>
+                </div>
+                <div class="inputbox">
+                  <input type="text" name="name" placeholder="Enter your Full name" required />
+                  <label for="name">Name</label>
+                </div>
+                <div class="inputbox">
+                  <input type="email" name="email" placeholder="Enter your Email" required />
+                  <label for="email">Email</label>
+                </div>
+                <div class="inputbox">
+                  <input type="text" name="details" placeholder="Enter your Project Details" required />
+                  <label for="details">Details</label>
+                </div>
+                <div class="buttons">
+                  <button type="submit" class="bts">Send Message</button>
+                </div>
               </div>
             </div>
           </form>
+          
         </div>
         <!-- <img class="ell1" src="images/Ellipse 13 (4).png" alt="" /> -->
       </div>
@@ -429,5 +329,65 @@
       crossorigin="anonymous"
     ></script>
   <script src="./javascript/contact.js"></script>
+
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js";
+    import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyBuDVWInt9XbnPBAb5l7RUTr7TrdglHJEk",
+        authDomain: "kittivaasal-website.firebaseapp.com",
+        databaseURL: "https://kittivaasal-website-default-rtdb.firebaseio.com",
+        projectId: "kittivaasal-website",
+        storageBucket: "kittivaasal-website.appspot.com",
+        messagingSenderId: "4222968083",
+        appId: "1:4222968083:web:408956f42f035b096bfae6"
+    };
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  
+    // Initialize Realtime Database
+    const db = getDatabase(app);
+  
+    // Form submission handling
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contactForm');
+  
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault(); // Prevent default form submission
+  
+        try {
+          // Get the form data
+          const name = form.name.value;
+          const email = form.email.value;
+          const details = form.details.value;
+  
+          // Create a unique key for each message (e.g., using timestamp)
+          const timestamp = new Date().getTime();
+          const contactRef = ref(db, 'contacts/' + timestamp);
+  
+          // Save the form data to Realtime Database
+          await set(contactRef, {
+            name: name,
+            email: email,
+            details: details
+          });
+  
+          console.log('Message sent successfully!');
+          alert('Your message has been sent successfully!');
+          form.reset(); // Reset the form after successful submission
+        } catch (error) {
+          console.error('Error sending message:', error);
+          alert('There was an error sending your message. Please try again.');
+        }
+      });
+    });
+  </script>
+  
+
   </body>
 </html>

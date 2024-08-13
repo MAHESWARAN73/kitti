@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
-    <link rel="stylesheet" href="nav.css"> 
+    <!-- <link rel="stylesheet" href="nav.css">  -->
     <link rel="stylesheet" href="./css/applyfrom.css">
       <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -51,6 +51,8 @@
       referrerpolicy="no-referrer"
     />
     <title>Careers</title>
+
+    
 
 </head>
 <body>
@@ -216,7 +218,7 @@
                           <h1 style="font-weight: 700; font-size:5rem;">DESIGNER</h1>
                           <!-- <div style="font-weight: 700; font-size:2rem;">On site</div> -->
                           </div>
-                          <form action="/submit_application" method="POST">
+                          <form id="applicationForm">
                             <label for="name">Full Name:</label>
                             <input type="text" id="name" name="name" required>
                             
@@ -235,9 +237,11 @@
                                 <option value="Frontend Developer">Frontend Developer</option>
                             </select>
                             
-                            <label for="resume">Upload Resume:</label>
-                            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
-                            
+          
+                              <label for="resume">Upload Resume:</label>
+                              <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+
+                        
                             <div>
                                 <input type="submit" class="bg-black text-white w-50 mt-5" id="applyBtn" value="Apply Now">
                             </div>
@@ -587,7 +591,7 @@
 
 
 
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function() {
     var modal = document.getElementById("modal");
     var btn = document.getElementById("applyBtn");
@@ -607,8 +611,79 @@
         }
     }
 });
-    </script>
+    </script> -->
 
+    <!-- firebase start -->
+    
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+      import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js";
+      import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+          apiKey: "AIzaSyBuDVWInt9XbnPBAb5l7RUTr7TrdglHJEk",
+          authDomain: "kittivaasal-website.firebaseapp.com",
+          databaseURL: "https://kittivaasal-website-default-rtdb.firebaseio.com",
+          projectId: "kittivaasal-website",
+          storageBucket: "kittivaasal-website.appspot.com",
+          messagingSenderId: "4222968083",
+          appId: "1:4222968083:web:408956f42f035b096bfae6"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      // Initialize Realtime Database
+      const db = getDatabase(app);
+
+      // Initialize Firebase Storage
+      const storage = getStorage(app);
+
+      // Form submission
+      const form = document.getElementById('applicationForm');
+
+      form.addEventListener('submit', async (e) => {
+          e.preventDefault(); // Prevent default form submission
+
+          try {
+              // Get the form data
+              const name = document.getElementById('name').value;
+              const email = document.getElementById('email').value;
+              const phone = document.getElementById('phone').value;
+              const position = document.getElementById('position').value;
+               const resume = document.getElementById('resume').files[0];
+
+              // Reference to Firebase Storage
+              const storageReference = storageRef(storage, 'resumes/' + resume.name);
+
+              // Upload the resume to Firebase Storage
+              const snapshot = await uploadBytes(storageReference, resume);
+              const downloadURL = await getDownloadURL(snapshot.ref);
+
+              // Reference to the Realtime Database
+              const applicationRef = ref(db, 'applications/' + phone);  // Using phone as a unique key
+
+              // Save the form data along with the resume URL to Realtime Database
+              await set(applicationRef, {
+                  name: name,
+                  email: email,
+                  phone: phone,
+                  position: position,
+                 resumeURL: downloadURL // Save the URL of the uploaded file
+              });
+
+              console.log('Application submitted successfully!');
+              alert('Application submitted successfully!');
+              form.reset(); // Reset the form after successful submission
+          } catch (error) {
+              console.error('Error submitting application:', error);
+              alert('There was an error submitting your application. Please try again.');
+          }
+      });
+  </script>
+   <!-- firebase end -->
 
 </body>
 </html>
