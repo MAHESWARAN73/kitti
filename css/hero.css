@@ -20,6 +20,10 @@
     line-height: 25px;
 
 }
+.img-fluid {
+  max-width: 95%;
+  height: auto;
+}
 @media (max-width: 400px) {
   #madhu {
     font-size: 22px;
