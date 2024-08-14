@@ -7,10 +7,24 @@
   overflow: hidden;
   width: fit-content;
 }
+.p1{
+    position: absolute;
+    left: 23%;
+    top: 30%;
+    font-family: "Montserrat";
+    color: #0b0b0b;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 25px;
+
+}
 @media (max-width: 400px) {
   #madhu {
     font-size: 22px;
     margin-left: 30px;
+    
   }
 }
 .card {
@@ -46,7 +60,7 @@
 }
 @media (min-width: 600px) {
   .hero-nav {
-    margin-top: 12rem;
+    margin-top: 8rem;
   }
 }
 /* #myCarousel {
@@ -57,6 +71,7 @@
   background-image: none !important;
   display: block !important;
   width: 100% !important;
+  
 }
 
 /* .carousel-control-prev,.carousel-control-next{
@@ -94,6 +109,8 @@
     border-radius: 200px;
   }
 }
+
+
 @media (max-width: 768px) {
   #Hero_inner.carousel-inner #Hero_item.carousel-item > div {
     display: block;
@@ -123,6 +140,7 @@
 #Hero_inner.carousel-inner #Hero_item.carousel-item-prev {
   display: flex;
   column-gap: 5px;
+  
 }
 
 @media (min-width: 768px) {
