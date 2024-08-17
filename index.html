@@ -38,6 +38,12 @@
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/blogs.css" />
   <!-- <link rel="stylesheet" href="css/applyfrom.css"> -->
+
+  <style>
+
+  </style>
+
+  
 </head>
 
 <body>
@@ -116,7 +122,7 @@
           <div class="dropdown-content">
             <a href="industrises.html">Industries</a>
             <a href="service.html">Services</a>
-            <a href="products.html">Products</a>
+            <!-- <a href="products.html">Products</a> -->
           </div>
         </div>
         <div class="dropdown-img">
@@ -133,7 +139,7 @@
         <div class="dropdown">
           <h4 class="dropbtn">Insights</h4>
           <div class="dropdown-content-1">
-            <a href="#">Life at kittivaasal</a>
+            <!-- <a href="#">Life at kittivaasal</a> -->
             <a href="blogs.html">Blogs</a>
             <a href="casestudy.html">Case study</a>
           </div>
@@ -1596,8 +1602,15 @@
   <script src="javascript/blogs.js" defer></script>
   <script src="javascript/hero.js"></script>
   <script src="javascript/animation.js"></script>
-  <!-- <script src="javascript/Enquiry.js"></script> -->
-  <!-- <script src="firebase/enquiry.js"></script> -->
+ <script>
+  document.querySelectorAll('.image').forEach(item => {
+  item.addEventListener('click', event => {
+    const overlay = item.querySelector('.image__overlay');
+    overlay.classList.toggle('active');
+  });
+});
+
+ </script>
 
   
   <script type="module">
