@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/industries.css" />
     <link rel="stylesheet" href="css/enquiry.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -53,7 +54,7 @@
 
     <title>Industries</title>
     <style>
-    .main_grp {
+    /* .main_grp {
       position: relative;
       text-align: center;
     }
@@ -82,15 +83,55 @@
         font-size: 12px;
         bottom: 5px;
       }
-    }
+    } */
+     .main_grp {
+  position: relative;
+  text-align: center;
+}
+
+.group_img {
+  width: 100%;
+}
+
+.view-more-btn {
+  position: absolute;
+  bottom: -90px;
+  left: 185%;
+  transform: translateX(-50%);
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .view-more-btn {
+    bottom: -75px;
+    padding: 6px 12px;
+    font-size: 14px;
+    left: 79%;
+   
+  }
+}
+
+@media (max-width: 576px) {
+  .view-more-btn {
+    bottom: -25px;
+    padding: 6px 12px;
+    font-size: 12px;
+    left: 79%;
+  }
+}
+
   </style>
   </head>
 
   <body>
     <div class="bodybgg">
       <!--Navbar-->
-      <section>
-        <nav class="navbar" id="navbar">
+      <div>
+        <nav class="navbar navbar-expand-lg" id="navbar">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
               <img
@@ -101,133 +142,138 @@
                 class=""
               />
             </a>
-            <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNavDropdown"
-                  aria-controls="navbarNavDropdown"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <!-- Who we are -->
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Who we are
-                        <img src="images/arrow.png" alt="" />
-                      </a>
-                      <ul class="dropdown-menu p-0">
-                        <li><a class="dropdown-item" href="about.html">About us</a></li>
-                        <li><a class="dropdown-item" href="leadership.html">Leadership</a></li>
-                        <li><a class="dropdown-item" href="social.html">Environmental social governance</a></li>
-                      </ul>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">  <!-- Added ms-auto to align right -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Who we are
+                    <img src="images/arrow.png" alt="" />
+                  </a>
+                  <ul class="dropdown-menu p-0">
+                    <li>
+                      <a class="dropdown-item" href="about.html">About us</a>
                     </li>
-            
-                    <!-- What we do -->
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        What we do
-                        <img src="images/arrow.png" alt="" />
-                      </a>
-                      <ul class="dropdown-menu p-0">
-                        <!-- Industries Dropdown -->
-                        <li class="dropdown-submenu">
-                          <a
-                            class="dropdown-item dropdown-toggle"
-                            href="#"
-                          >
-                            Industries
-                          </a>
-                          <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">HEALTH CARE</a></li>
-                            <li><a class="dropdown-item" href="#">AGRI</a></li>
-                            <li><a class="dropdown-item" href="#">FASHION</a></li>
-                            <li><a class="dropdown-item" href="#">FINANCIAL</a></li>
-                            <li><a class="dropdown-item" href="#">FOOD INDUSTRY</a></li>
-                            <li><a class="dropdown-item" href="#">EDUCATION SERVICE</a></li>
-                            <li><a class="dropdown-item" href="#">AUTOMOTIVE</a></li>
-                            <li><a class="dropdown-item" href="#">ENVIRONMENT</a></li>
-                            <li><a class="dropdown-item" href="#">ENTERTAINMENT</a></li>
-
-                          </ul>
-                        </li>
-                        <!-- Services and Products -->
-                        <li><a class="dropdown-item" href="service.html">Services</a></li>
-                        <!-- <li><a class="dropdown-item" href="products.html">Products</a></li> -->
-                      </ul>
+                    <li>
+                      <a class="dropdown-item" href="leadership.html">Leadership</a>
                     </li>
-            
-                    <!-- Careers -->
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        aria-current="page"
-                        href="career.html"
-                        style="color: #000000a6"
-                      >
-                        Careers
-                        <!-- <img src="images/arrow.png" alt="" /> -->
-                      </a>
-                    </li>
-            
-                    <!-- Insights -->
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Insights
-                        <img src="images/arrow.png" alt="" />
-                      </a>
-                      <ul class="dropdown-menu p-0">
-                        <!-- <li><a class="dropdown-item" href="#">Life at kittivaasal</a></li> -->
-                        <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
-                        <li><a class="dropdown-item" href="casestudy.html">Case study</a></li>
-                      </ul>
-                    </li>
-            
-                    <!-- Contact Us Button -->
-                    <li class="nav-item">
-                      <a href="contact.html">
-                        <button
-                          type="button"
-                          class="btn btn-dark"
-                          style="border-radius: 25px"
-                        >
-                          Contact us
-                        </button>
+                    <li>
+                      <a class="dropdown-item" href="social.html">
+                        Environmental social governance
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-            </nav>
-            
-            
+                </li>
+
+                 <!-- What we do -->
+                 <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    What we do
+                    <img src="images/arrow.png" alt="" />
+                  </a>
+                  <ul class="dropdown-menu p-0">
+                    <!-- Industries Dropdown -->
+                    <li class="dropdown-submenu">
+                      <a
+                        class="dropdown-item dropdown-toggle"
+                        href="#"
+                      >
+                        Industries
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">HEALTH CARE</a></li>
+                        <li><a class="dropdown-item" href="#">AGRI</a></li>
+                        <li><a class="dropdown-item" href="#">FASHION</a></li>
+                        <li><a class="dropdown-item" href="#">FINANCIAL</a></li>
+                        <li><a class="dropdown-item" href="#">FOOD INDUSTRY</a></li>
+                        <li><a class="dropdown-item" href="#">EDUCATION SERVICE</a></li>
+                        <li><a class="dropdown-item" href="#">AUTOMOTIVE</a></li>
+                        <li><a class="dropdown-item" href="#">ENVIRONMENT</a></li>
+                        <li><a class="dropdown-item" href="#">ENTERTAINMENT</a></li>
+
+                      </ul>
+      
+              
+                    <li>
+                      <a class="dropdown-item" href="service.html">Services</a>
+                    </li>
+                  </ul>
+                </li>
+      
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="career.html"
+                    style="color: #000000a6"
+                  >
+                    Careers
+                    <!-- <img src="images/arrow.png" alt="" /> -->
+                  </a>
+                </li>
+      
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Insights
+                    <img src="images/arrow.png" alt="" />
+                  </a>
+                  <ul class="dropdown-menu p-0">
+                    <!-- <li>
+                      <a class="dropdown-item" href="#">
+                        Life at kittivaasal
+                      </a>
+                    </li> -->
+                    <li>
+                      <a class="dropdown-item" href="blogs.html">Blogs</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="casestudy.html">
+                        Case study
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html">
+                    <button type="button" class="btn btn-dark">
+                      Contact us
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
-      </section>
+      </div>
+      
 
       <!--Mobile navbar start-->
       <div class="container-fluid p-0" id="Mobile-nav">
