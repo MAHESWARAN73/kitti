@@ -49,42 +49,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
     
 
     <title>Industries</title>
     <style>
-    /* .main_grp {
-      position: relative;
-      text-align: center;
-    }
-    .group_img {
-      width: 100%;
-    }
-    .view-more-btn {
-      position: absolute;
-      bottom: -90px;
-      left: 185%;
-      transform: translateX(-50%);
-      font-family: "Montserrat", sans-serif;
-      background-color: #f1f1f1;
-      border-radius: 20px;
-    }
-    @media (max-width: 768px) {
-      .view-more-btn {
-        padding: 8px 16px;
-        font-size: 14px;
-        bottom: 10px;
-      }
-    }
-    @media (max-width: 576px) {
-      .view-more-btn {
-        padding: 6px 12px;
-        font-size: 12px;
-        bottom: 5px;
-      }
-    } */
-     .main_grp {
+   
+   .main_grp {
   position: relative;
   text-align: center;
 }
@@ -105,13 +76,13 @@
   font-size: 16px;
 }
 
+
 @media (max-width: 768px) {
   .view-more-btn {
-    bottom: -75px;
-    padding: 6px 12px;
-    font-size: 14px;
-    left: 79%;
-   
+      bottom: -3px;
+      padding: 6px 12px;
+      font-size: 14px;
+      left: 168%;
   }
 }
 
@@ -123,6 +94,50 @@
     left: 79%;
   }
 }
+@media (max-width: 430px) {
+  .view-more-btn {
+    bottom: -65px;
+    padding: 6px 12px;
+    font-size: 12px;
+    left: 79%;
+  }
+}
+
+
+/* Basic styles for the dropdown container */
+        .dropdown-submenu {
+            position: relative; 
+            display: inline-block; 
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            display: none; 
+            position: absolute; 
+            left: 100%; 
+            top: 0; 
+            white-space: nowrap; 
+            max-height: 300px;
+            overflow-y: auto; 
+            background-color: white; 
+            border: 1px solid #ccc; 
+            z-index: 1000; 
+        }
+
+        .dropdown-submenu:hover .dropdown-menu {
+            display: block; 
+        }
+
+        .dropdown-item {
+            display: block; 
+            padding: 10px; 
+            text-decoration: none; 
+            color: black; 
+        }
+
+        .dropdown-item:hover {
+            background-color: #f0f0f0; 
+        }
+
 
   </style>
   </head>
@@ -275,53 +290,71 @@
       </div>
       
 
-      <!--Mobile navbar start-->
-      <div class="container-fluid p-0" id="Mobile-nav">
-        <div class="dropdown-cont">
-          <div class="dropdown">
-            <h4 class="dropbtn">Who we are</h4>
-            <div class="dropdown-content">
+      <!-- Mobile navbar start -->
+<div class="container-fluid p-0" id="Mobile-nav">
+  <div class="dropdown-cont">
+      <div class="dropdown">
+          <h4 class="dropbtn">Who we are</h4>
+          <div class="dropdown-content">
               <a href="about.html">About us</a>
               <a href="leadership.html">Leadership</a>
               <a href="social.html">Environmental</a>
-            </div>
           </div>
-          <div class="dropdown">
-            <h4 class="dropbtn">What we do</h4>
-            <div class="dropdown-content">
-              <a href="industrises.html">Industries</a>
-              <a href="service.html">Services</a>
-              <!-- <a href="products.html">Products</a> -->
+      </div>
+      <div class="dropdown">
+        <h4 class="dropbtn">What we do</h4>
+        <div class="dropdown-content">
+            <!-- Industries Dropdown Link -->
+            <div class="dropdown-submenu">
+                <a href="#" class="dropdown-item dropdown-toggle">Industries</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">HEALTH CARE</a></li>
+                    <li><a class="dropdown-item" href="#">AGRI</a></li>
+                    <li><a class="dropdown-item" href="#">FASHION</a></li>
+                    <li><a class="dropdown-item" href="#">FINANCIAL</a></li>
+                    <li><a class="dropdown-item" href="#">FOOD INDUSTRY</a></li>
+                    <li><a class="dropdown-item" href="#">EDUCATION SERVICE</a></li>
+                    <li><a class="dropdown-item" href="#">AUTOMOTIVE</a></li>
+                    <li><a class="dropdown-item" href="#">ENVIRONMENT</a></li>
+                    <li><a class="dropdown-item" href="#">ENTERTAINMENT</a></li>
+                </ul>
             </div>
-          </div>
-          <div class="dropdown-img">
-            <a href="index.html">
+            <!-- Other Links in What We Do -->
+            <a href="service.html">Services</a>
+        </div>
+    </div>
+    
+      <div class="dropdown-img">
+          <a href="index.html">
               <img src="images/Kitti-logo.png" alt="" width="100px" />
-            </a>
+          </a>
+      </div>
+      <div class="dropdown">
+          <div class="dropdown-h4">
+              <a href="career.html">
+                  <h4>Careers</h4>
+              </a>
           </div>
-          <div class="dropdown">
-            <div class="dropdown-h4">
-              <a href="career.html"><h4>Careers</h4></a>
-            </div>
-          </div>
-
-          <div class="dropdown">
-            <h4 class="dropbtn">Insights</h4>
-            <div class="dropdown-content-1">
-              <!-- <a href="#">Life at kittivaasal</a> -->
+      </div>
+      <div class="dropdown">
+          <h4 class="dropbtn">Insights</h4>
+          <div class="dropdown-content-1">
               <a href="blogs.html">Blogs</a>
               <a href="casestudy.html">Case study</a>
-            </div>
           </div>
-          <div class="dropdown">
-            <div class="dropdown-contact">
-              <a href="contact.html"><h4>Contact</h4></a>
-            </div>
-          </div>
-        </div>
       </div>
+      <div class="dropdown">
+          <div class="dropdown-contact">
+              <a href="contact.html">
+                  <h4>Contact</h4>
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Mobile navbar End -->
 
-      <!--Mobile navbar End-->
+
       <!--Industries Content-->
       <section>
         <div class="Indust">
@@ -785,6 +818,20 @@
         }
       });
     });
+  </script>
+  <script>
+    document.querySelectorAll('.dropdown-toggle').forEach(item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        let nextEl = this.nextElementSibling;
+        if(nextEl && nextEl.classList.contains('dropdown-menu')) {
+            nextEl.classList.toggle('show');
+        }
+    });
+});
+
+
+
   </script>
   </body>
 </html>

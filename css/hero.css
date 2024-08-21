@@ -78,11 +78,11 @@
   
 }
 
-/* .carousel-control-prev,.carousel-control-next{
+.carousel-control-prev,.carousel-control-next{
         margin-top: 25%;
         background-color: none;
-        position: relative; !important
-    } */
+        /* position: relative; !important */
+    }
 .leftButton,
 .rightButton {
   border: none;
@@ -151,19 +151,19 @@
   #Hero_inner.carousel-inner #Hero_item.carousel-item-right.active,
   #Hero_inner.carousel-inner #Hero_item.carousel-item-next,
   #Hero_item.carousel-item-next:not(#Hero_item.carousel-item-start) {
-    transform: translateX(25%) !important;
+     transform: translateX(25%) !important; 
   }
 
   #Hero_inner.carousel-inner #Hero_item.carousel-item-left.active,
   #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end),
   .active#Hero_item.carousel-item-start,
   #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end) {
-    transform: translateX(-25%) !important;
+     transform: translateX(-25%) !important; 
   }
 
   #Hero_item.carousel-item-next#Hero_item.carousel-item-start,
   .active#Hero_item.carousel-item-end {
-    transform: translateX(0) !important;
+    transform: translateX(0) !important; 
   }
 
   #Hero_inner.carousel-inner #Hero_item.carousel-item-prev,
@@ -257,4 +257,9 @@
   .carousel-inner .madhu p1.text {
     font-size: 14px;
   }
+  
+
+.mt-5 {
+  margin-top: -0.1rem !important;
+}
 }
