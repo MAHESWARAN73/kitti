@@ -151,14 +151,14 @@
   #Hero_inner.carousel-inner #Hero_item.carousel-item-right.active,
   #Hero_inner.carousel-inner #Hero_item.carousel-item-next,
   #Hero_item.carousel-item-next:not(#Hero_item.carousel-item-start) {
-     transform: translateX(25%) !important; 
+     /* transform: translateX(25%) !important;  */
   }
 
   #Hero_inner.carousel-inner #Hero_item.carousel-item-left.active,
   #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end),
   .active#Hero_item.carousel-item-start,
   #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end) {
-     transform: translateX(-25%) !important; 
+     /* transform: translateX(-25%) !important;  */
   }
 
   #Hero_item.carousel-item-next#Hero_item.carousel-item-start,
@@ -168,7 +168,7 @@
 
   #Hero_inner.carousel-inner #Hero_item.carousel-item-prev,
   #Hero_item.carousel-item-prev:not(#Hero_item.carousel-item-end) {
-    transform: translateX(-25%) !important;
+    /* transform: translateX(-25%) !important; */
   }
 }
 .bo {
