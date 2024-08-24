@@ -128,11 +128,33 @@
     }
   }
   
-  @media (max-width: 400px) {
-    .buttons {
-      width: 70%;
+  /* Tablet and Small Screen Adjustments */
+  @media (max-width: 768px) {
+    .bts {
+      width: 200px; /* Adjust width for tablet screens */
+      font-size: 16px; /* Slightly smaller font size */
     }
   }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 576px) {
+    .bts {
+      width: 180px; /* Adjust width for mobile screens */
+      font-size: 15px; /* Smaller font size */
+      margin-top: 5px; /* Adjust top margin */
+    }
+  }
+  
+  /* Very Small Screens (e.g., phones) */
+  @media (max-width: 400px) {
+    .bts {
+      width: 160px; /* Narrow width for small screens */
+      font-size: 14px; /* Further reduce font size */
+      padding: 5px 10px; /* Add padding for better touch area */
+      margin-top: 8px; /* Further reduce top margin */
+    }
+  }
+  
   @media (min-width: 300px) {
     .inputbox {
       margin: 13px 0 0;
