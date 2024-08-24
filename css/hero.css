@@ -7,6 +7,14 @@
   overflow: hidden;
   width: fit-content;
 }
+  @media (max-width: 400px) {
+    .bts {
+      width: 160px; /* Narrow width for small screens */
+      font-size: 14px; /* Further reduce font size */
+      padding: 5px 10px; /* Add padding for better touch area */
+      margin-top: 4px; /* Further reduce top margin */
+    }
+  }
 .p1{
     position: absolute;
     left: 23%;
