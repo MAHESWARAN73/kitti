@@ -151,7 +151,7 @@
       width: 160px; /* Narrow width for small screens */
       font-size: 14px; /* Further reduce font size */
       padding: 5px 10px; /* Add padding for better touch area */
-      margin-top: 8px; /* Further reduce top margin */
+      margin-top: 4px; /* Further reduce top margin */
     }
   }
   
