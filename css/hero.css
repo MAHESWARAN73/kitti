@@ -55,7 +55,7 @@
 /* Adjustments for Very Small Screens */
 @media (max-width: 430px) {
   .img-fluid {
-    max-width: 98%; /* Further reduce max-width for very small screens */
+    max-width: 300px; /* Further reduce max-width for very small screens */
   }
 }
 
